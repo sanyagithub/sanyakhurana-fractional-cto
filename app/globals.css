@@ -141,6 +141,14 @@ a:hover {
   max-width: 64rem;
 }
 
+.max-w-3xl {
+  max-width: 48rem;
+}
+
+.max-w-xl {
+  max-width: 36rem;
+}
+
 /* =========================
    SPACING
    ========================= */
@@ -153,6 +161,16 @@ a:hover {
 .px-5 {
   padding-left: 1.25rem;
   padding-right: 1.25rem;
+}
+
+.px-6 {
+  padding-left: 1.5rem;
+  padding-right: 1.5rem;
+}
+
+.px-8 {
+  padding-left: 2rem;
+  padding-right: 2rem;
 }
 
 .py-2 {
@@ -180,6 +198,11 @@ a:hover {
   padding-bottom: 4rem;
 }
 
+.py-20 {
+  padding-top: 5rem;
+  padding-bottom: 5rem;
+}
+
 .pt-12 {
   padding-top: 3rem;
 }
@@ -201,6 +224,10 @@ a:hover {
 }
 
 .p-5 {
+  padding: 1.5rem;
+}
+
+.p-6 {
   padding: 1.5rem;
 }
 
@@ -394,6 +421,11 @@ a:hover {
   line-height: 2.25rem;
 }
 
+.text-4xl {
+  font-size: 2.25rem;
+  line-height: 2.5rem;
+}
+
 .text-\[0\.7rem\] {
   font-size: 0.7rem;
   line-height: 1rem;
@@ -427,6 +459,10 @@ a:hover {
 
 .tracking-\[0\.22em\] {
   letter-spacing: 0.22em;
+}
+
+.tracking-\[0\.25em\] {
+  letter-spacing: 0.25em;
 }
 
 /* Text colors */
@@ -607,6 +643,11 @@ a {
   .md\:text-3xl {
     font-size: 1.875rem;
     line-height: 2.25rem;
+  }
+
+  .md\:text-4xl {
+    font-size: 2.25rem;
+    line-height: 2.5rem;
   }
 
   .md\:text-5xl {
