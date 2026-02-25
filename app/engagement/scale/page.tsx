@@ -1,7 +1,5 @@
-const EMAIL = "sanya@monica.in";
-const mailtoHref = `mailto:${EMAIL}?subject=${encodeURIComponent(
-    "NorthStar CTO Inquiry: Scale Engagement"
-)}`;
+const calendlyHref =
+    "https://calendly.com/sanya-6/1-1-call-with-sanya?hide_event_type_details=1&hide_gdpr_banner=1";
 
 export const metadata = {
     title: "Scale Fractional CTO | Executive Technical Leadership",
@@ -59,7 +57,9 @@ export default function ScaleCTOPage() {
 
                                 <div className="mt-8 flex flex-wrap gap-3">
                                     <a
-                                        href={mailtoHref}
+                                        href={calendlyHref}
+                                        target="_blank"
+                                        rel="noopener noreferrer"
                                         className="rounded-full bg-blue-500 px-6 py-3 text-sm font-semibold text-slate-950 hover:bg-blue-300"
                                     >
                                         Explore Scale Engagement
@@ -180,7 +180,9 @@ export default function ScaleCTOPage() {
 
                         <div className="mt-8">
                             <a
-                                href={mailtoHref}
+                                href={calendlyHref}
+                                target="_blank"
+                                rel="noopener noreferrer"
                                 className="rounded-full bg-blue-500 px-8 py-3 text-sm font-semibold text-slate-950 hover:bg-blue-300"
                             >
                                 Schedule Executive Consultation

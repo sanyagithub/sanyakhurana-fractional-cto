@@ -1,7 +1,5 @@
-const EMAIL = "sanya@monica.in";
-const mailtoHref = `mailto:${EMAIL}?subject=${encodeURIComponent(
-    "NorthStar CTO Inquiry: Growth Engagement"
-)}`;
+const calendlyHref =
+    "https://calendly.com/sanya-6/1-1-call-with-sanya?hide_event_type_details=1&hide_gdpr_banner=1";
 
 export const metadata = {
     title: "Growth Fractional CTO | Active Technical Leadership",
@@ -47,7 +45,9 @@ export default function GrowthCTOPage() {
                                 </p>
 
                                 <div className="mt-8">
-                                    <a href={mailtoHref}
+                                    <a href={calendlyHref}
+                                       target="_blank"
+                                       rel="noopener noreferrer"
                                        className="rounded-full bg-blue-500 px-6 py-3 text-sm font-semibold text-slate-950 hover:bg-blue-300">
                                         Discuss Growth Engagement
                                     </a>

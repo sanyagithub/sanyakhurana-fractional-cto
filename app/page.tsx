@@ -2,9 +2,11 @@
 import Link from "next/link";
 
 const EMAIL = "sanya@monica.in";
-const mailtoHref = `mailto:${EMAIL}?subject=${encodeURIComponent(
+const emailHref = `mailto:${EMAIL}?subject=${encodeURIComponent(
     "NorthStar CTO Inquiry: Fractional CTO for Founders"
 )}`;
+const CALENDLY_URL =
+    "https://calendly.com/sanya-6/1-1-call-with-sanya?hide_event_type_details=1&hide_gdpr_banner=1";
 
 export const metadata = {
     title: "Fractional CTO for Growing Businesses | NorthStar CTO — Sanya Khurana",
@@ -37,7 +39,9 @@ export default function HomePage() {
                     </nav>
 
                     <a
-                        href={mailtoHref}
+                        href={CALENDLY_URL}
+                        target="_blank"
+                        rel="noopener noreferrer"
                         className="ml-4 inline-flex items-center rounded-full bg-blue-500 px-4 py-2 text-sm font-semibold text-slate-950 shadow-md shadow-blue-500/30 hover:bg-blue-300 focus:outline-none focus:ring-2 focus:ring-blue-300 focus:ring-offset-2 focus:ring-offset-slate-950"
                     >
                         Work with me
@@ -82,14 +86,18 @@ export default function HomePage() {
 
                                 <div className="mt-6 flex flex-wrap items-center gap-3">
                                 <a
-                                        href={mailtoHref}
+                                        href={CALENDLY_URL}
+                                        target="_blank"
+                                        rel="noopener noreferrer"
                                         className="inline-flex items-center rounded-full bg-blue-500 px-5 py-2.5 text-sm font-semibold text-slate-950 shadow-lg shadow-blue-500/30 hover:bg-blue-300 focus:outline-none focus:ring-2 focus:ring-blue-300 focus:ring-offset-2 focus:ring-offset-slate-950"
                                     >
                                         Work With Me
                                     </a>
 
                                     <a
-                                        href="#contact"
+                                        href={CALENDLY_URL}
+                                        target="_blank"
+                                        rel="noopener noreferrer"
                                         className="inline-flex items-center rounded-full border border-slate-700 px-4 py-2 text-sm font-medium text-slate-200 hover:border-slate-500 hover:text-slate-50"
                                     >
                                         Book a 30-Minute Call
@@ -397,14 +405,18 @@ export default function HomePage() {
 
                         <div className="mt-6 flex flex-wrap items-center gap-3">
                             <a
-                                href={mailtoHref}
+                                href={CALENDLY_URL}
+                                target="_blank"
+                                rel="noopener noreferrer"
                                 className="inline-flex items-center rounded-full bg-blue-500 px-5 py-2.5 text-sm font-semibold text-slate-950 shadow-md shadow-blue-500/30 hover:bg-blue-300 focus:outline-none focus:ring-2 focus:ring-blue-300 focus:ring-offset-2 focus:ring-offset-slate-950"
                             >
                                 Book a 30-Minute Call
                             </a>
 
                             <a
-                                href={mailtoHref}
+                                href={CALENDLY_URL}
+                                target="_blank"
+                                rel="noopener noreferrer"
                                 className="inline-flex items-center rounded-full border border-slate-700 px-4 py-2 text-sm font-medium text-slate-200 hover:border-slate-500 hover:text-slate-50"
                             >
                                 Work With Me
@@ -412,7 +424,7 @@ export default function HomePage() {
 
                             <p className="mt-3 text-xs text-slate-400">
                                 Or email directly at{" "}
-                                <a href={mailtoHref} className="font-medium text-blue-300 underline-offset-2 hover:underline">
+                                <a href={emailHref} className="font-medium text-blue-300 underline-offset-2 hover:underline">
                                     {EMAIL}
                                 </a>
                             </p>

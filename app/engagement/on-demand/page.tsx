@@ -1,7 +1,5 @@
-const EMAIL = "sanya@monica.in";
-const mailtoHref = `mailto:${EMAIL}?subject=${encodeURIComponent(
-    "NorthStar CTO Inquiry: On-Demand Advisory"
-)}`;
+const calendlyHref =
+    "https://calendly.com/sanya-6/1-1-call-with-sanya?hide_event_type_details=1&hide_gdpr_banner=1";
 
 export const metadata = {
     title: "On-Demand CTO Advisory | Technical Audits & Strategic Support",
@@ -59,7 +57,9 @@ export default function OnDemandPage() {
 
                                 <div className="mt-8">
                                     <a
-                                        href={mailtoHref}
+                                        href={calendlyHref}
+                                        target="_blank"
+                                        rel="noopener noreferrer"
                                         className="rounded-full bg-blue-500 px-6 py-3 text-sm font-semibold text-slate-950 hover:bg-blue-300"
                                     >
                                         Request Advisory Session
@@ -142,7 +142,9 @@ export default function OnDemandPage() {
 
                         <div className="mt-8">
                             <a
-                                href={mailtoHref}
+                                href={calendlyHref}
+                                target="_blank"
+                                rel="noopener noreferrer"
                                 className="rounded-full bg-blue-500 px-8 py-3 text-sm font-semibold text-slate-950 hover:bg-blue-300"
                             >
                                 Schedule Advisory Call
