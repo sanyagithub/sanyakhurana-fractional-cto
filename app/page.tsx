@@ -23,7 +23,7 @@ export default function HomePage() {
               NorthStar CTO
             </span>
                         <span className="text-lg font-semibold text-slate-50">
-              Fractional CTO for Founders
+              Fractional CTO for Growing Businesses
             </span>
                     </div>
 
