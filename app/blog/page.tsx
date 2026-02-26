@@ -30,10 +30,10 @@ export default function BlogIndexPage() {
                 <h1 className="text-3xl font-semibold leading-tight text-slate-50 md:text-4xl">
                     Insights for founders and growing teams
                 </h1>
-                <p className="mt-4 max-w-xl text-sm text-slate-300">
-                    You publish by editing <code>app/blog/posts.ts</code>. There is no
-                    public posting form, so visitors can only read.
-                </p>
+                {/*<p className="mt-4 max-w-xl text-sm text-slate-300">*/}
+                {/*    You publish by editing <code>app/blog/posts.ts</code>. There is no*/}
+                {/*    public posting form, so visitors can only read.*/}
+                {/*</p>*/}
 
                 <div className="mt-10 grid gap-6 md:grid-cols-2">
                     {posts.map((post) => (
