@@ -1,3 +1,5 @@
+import Link from "next/link";
+
 const calendlyHref =
     "https://calendly.com/sanya-6/1-1-call-with-sanya?hide_event_type_details=1&hide_gdpr_banner=1";
 
@@ -23,9 +25,9 @@ export default function OnDemandPage() {
                         </span>
                     </div>
 
-                    <a href="/" className="text-sm text-slate-300 hover:text-slate-50">
+                    <Link href="/" className="text-sm text-slate-300 hover:text-slate-50">
                         ← Back to Home
-                    </a>
+                    </Link>
                 </div>
             </header>
 
@@ -62,7 +64,7 @@ export default function OnDemandPage() {
                                         rel="noopener noreferrer"
                                         className="rounded-full bg-blue-500 px-6 py-3 text-sm font-semibold text-slate-950 hover:bg-blue-300"
                                     >
-                                        Request Advisory Session
+                                        Book a 30-Minute Call
                                     </a>
                                 </div>
 
@@ -147,7 +149,7 @@ export default function OnDemandPage() {
                                 rel="noopener noreferrer"
                                 className="rounded-full bg-blue-500 px-8 py-3 text-sm font-semibold text-slate-950 hover:bg-blue-300"
                             >
-                                Schedule Advisory Call
+                                Book a 30-Minute Call
                             </a>
                         </div>
 

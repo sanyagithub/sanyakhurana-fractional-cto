@@ -1,3 +1,5 @@
+import Link from "next/link";
+
 const calendlyHref =
     "https://calendly.com/sanya-6/1-1-call-with-sanya?hide_event_type_details=1&hide_gdpr_banner=1";
 
@@ -18,7 +20,7 @@ export default function GrowthCTOPage() {
                         <p className="text-xs uppercase tracking-[0.18em] text-slate-400">NorthStar CTO</p>
                         <p className="text-lg font-semibold text-slate-50">Growth CTO Engagement</p>
                     </div>
-                    <a href="/" className="text-sm text-slate-300 hover:text-slate-50">← Back to Home</a>
+                    <Link href="/" className="text-sm text-slate-300 hover:text-slate-50">← Back to Home</Link>
                 </div>
             </header>
 
@@ -49,7 +51,7 @@ export default function GrowthCTOPage() {
                                        target="_blank"
                                        rel="noopener noreferrer"
                                        className="rounded-full bg-blue-500 px-6 py-3 text-sm font-semibold text-slate-950 hover:bg-blue-300">
-                                        Discuss Growth Engagement
+                                        Book a 30-Minute Call
                                     </a>
                                     <p className="mt-3 text-xs text-slate-500">
                                         Flexible monthly structure · Scale up or down anytime

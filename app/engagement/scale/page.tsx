@@ -1,3 +1,5 @@
+import Link from "next/link";
+
 const calendlyHref =
     "https://calendly.com/sanya-6/1-1-call-with-sanya?hide_event_type_details=1&hide_gdpr_banner=1";
 
@@ -23,9 +25,9 @@ export default function ScaleCTOPage() {
                         </span>
                     </div>
 
-                    <a href="/" className="text-sm text-slate-300 hover:text-slate-50">
+                    <Link href="/" className="text-sm text-slate-300 hover:text-slate-50">
                         ← Back to Home
-                    </a>
+                    </Link>
                 </div>
             </header>
 
@@ -62,15 +64,15 @@ export default function ScaleCTOPage() {
                                         rel="noopener noreferrer"
                                         className="rounded-full bg-blue-500 px-6 py-3 text-sm font-semibold text-slate-950 hover:bg-blue-300"
                                     >
-                                        Explore Scale Engagement
+                                        Book a 30-Minute Call
                                     </a>
 
-                                    <a
+                                    <Link
                                         href="/engagement/growth"
                                         className="rounded-full border border-slate-700 px-5 py-3 text-sm text-slate-200 hover:border-slate-500"
                                     >
                                         Compare With Growth Model
-                                    </a>
+                                    </Link>
                                 </div>
 
                                 <p className="mt-4 text-xs text-slate-500">
@@ -185,7 +187,7 @@ export default function ScaleCTOPage() {
                                 rel="noopener noreferrer"
                                 className="rounded-full bg-blue-500 px-8 py-3 text-sm font-semibold text-slate-950 hover:bg-blue-300"
                             >
-                                Schedule Executive Consultation
+                                Book a 30-Minute Call
                             </a>
                         </div>
 
