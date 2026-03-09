@@ -8,6 +8,7 @@ export type BlogPost = {
     body: string[];
     youtubeEmbedUrl?: string;
     localVideoUrl?: string;
+    audioUrl?: string;
 };
 
 // Copy this object into BLOG_POSTS to publish new content.
@@ -26,6 +27,8 @@ export const BLOG_POST_TEMPLATE: BlogPost = {
     // For videos, set kind: \"video\" and add one of these:
     // youtubeEmbedUrl: \"https://www.youtube.com/embed/VIDEO_ID\",
     // localVideoUrl: \"/videos/your-file.mp4\",
+    // For audio on a post page:
+    // audioUrl: \"/audio/your-file.mp3\",
 };
 
 export const BLOG_POSTS: BlogPost[] = [
@@ -37,6 +40,7 @@ export const BLOG_POSTS: BlogPost[] = [
         publishedAt: "2026-02-26",
         kind: "article",
         tags: ["fractional cto", "startup growth", "technical leadership"],
+        audioUrl: "/audio/blog1.mp3",
         body: [
             "There is a particular phase in the life of a growing startup when ambition begins to outpace structure, when product momentum starts to create technical strain, and when the word CTO begins to surface in strategy conversations as though it were the obvious next step toward maturity and stability. The instinct is understandable, because as complexity increases and decisions carry heavier consequences, founders naturally look for senior leadership to contain that complexity and convert uncertainty into direction. However, in many cases, the impulse to hire a full-time Chief Technology Officer arises not from true organizational readiness, but from a feeling of discomfort that has not yet been properly diagnosed.",
             "A full-time CTO is not merely an experienced engineer with a broader job description, but a long-term architectural decision for the company itself, because this role influences infrastructure choices, hiring philosophy, engineering culture, technical debt tolerance, and the strategic alignment between product ambition and technical execution. When a startup is still refining its product-market fit, experimenting with revenue models, iterating on user experience, or even redefining its core value proposition, locking in permanent executive technical leadership can introduce rigidity at a moment when flexibility is still the company’s greatest advantage. In such stages, the real issue is rarely a lack of technical capability within the team, but rather a lack of structured decision-making frameworks that connect day-to-day engineering work to long-term business outcomes.",

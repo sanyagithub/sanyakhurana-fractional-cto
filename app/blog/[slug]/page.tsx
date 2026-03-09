@@ -55,6 +55,14 @@ export default async function BlogPostPage({ params }: BlogPostPageProps) {
                 <h1 className="mt-3 text-3xl font-semibold leading-tight text-slate-50 md:text-4xl">
                     {post.title}
                 </h1>
+                {post.audioUrl && (
+                    <div className="mt-6 rounded-2xl border border-slate-800 bg-slate-900/70 p-4">
+                        <audio controls preload="none" className="blog-audio-player">
+                            <source src={post.audioUrl} type="audio/mpeg" />
+                            Your browser does not support the audio element.
+                        </audio>
+                    </div>
+                )}
                 <p className="mt-4 text-sm text-slate-300">{post.excerpt}</p>
 
                 {post.youtubeEmbedUrl && (

@@ -177,128 +177,128 @@ export default function HomePage() {
                     </div>
                 </section>
 
-                <section id="why" className="border-t border-slate-900 bg-slate-950 py-20">
-                    <div className="mx-auto max-w-5xl px-4">
-                        <h2 className="text-xs font-semibold uppercase tracking-[0.22em] text-slate-400">
-                            Why a Fractional CTO
-                        </h2>
-                        <h3 className="mt-3 text-2xl font-semibold text-slate-50 md:text-3xl">
-                            Growing teams bring ambition. Technology needs direction.
-                        </h3>
+                {/*<section id="why" className="border-t border-slate-900 bg-slate-950 py-20">*/}
+                {/*    <div className="mx-auto max-w-5xl px-4">*/}
+                {/*        <h2 className="text-xs font-semibold uppercase tracking-[0.22em] text-slate-400">*/}
+                {/*            Why a Fractional CTO*/}
+                {/*        </h2>*/}
+                {/*        <h3 className="mt-3 text-2xl font-semibold text-slate-50 md:text-3xl">*/}
+                {/*            Growing teams bring ambition. Technology needs direction.*/}
+                {/*        </h3>*/}
 
-                        <div className="mt-6 grid gap-6 md:grid-cols-2">
-                            <div className="rounded-2xl border border-slate-800 bg-slate-900/70 p-5">
-                                <p className="text-sm text-slate-200">
-                                    Clear business goals, unclear technical roadmap
-                                </p>
-                                <p className="mt-3 text-sm text-slate-300">
-                                    Small teams often rely on developers without structured technical leadership.
-                                </p>
-                            </div>
+                {/*        <div className="mt-6 grid gap-6 md:grid-cols-2">*/}
+                {/*            <div className="rounded-2xl border border-slate-800 bg-slate-900/70 p-5">*/}
+                {/*                <p className="text-sm text-slate-200">*/}
+                {/*                    Clear business goals, unclear technical roadmap*/}
+                {/*                </p>*/}
+                {/*                <p className="mt-3 text-sm text-slate-300">*/}
+                {/*                    Small teams often rely on developers without structured technical leadership.*/}
+                {/*                </p>*/}
+                {/*            </div>*/}
 
-                            <div className="rounded-2xl border border-slate-800 bg-slate-900/70 p-5">
-                                <p className="text-sm text-slate-200">
-                                    Vendors ship features, not long-term technical stability
-                                </p>
-                                <p className="mt-3 text-sm text-slate-300">
-                                    Without oversight, systems become harder to maintain and more expensive over time.
-                                </p>
-                            </div>
-                        </div>
-                    </div>
-                </section>
+                {/*            <div className="rounded-2xl border border-slate-800 bg-slate-900/70 p-5">*/}
+                {/*                <p className="text-sm text-slate-200">*/}
+                {/*                    Vendors ship features, not long-term technical stability*/}
+                {/*                </p>*/}
+                {/*                <p className="mt-3 text-sm text-slate-300">*/}
+                {/*                    Without oversight, systems become harder to maintain and more expensive over time.*/}
+                {/*                </p>*/}
+                {/*            </div>*/}
+                {/*        </div>*/}
+                {/*    </div>*/}
+                {/*</section>*/}
 
-                <section id="what" className="border-t border-slate-900 bg-slate-950 py-20">
-                    <div className="mx-auto max-w-5xl px-4">
-                        <h2 className="text-xs font-semibold uppercase tracking-[0.22em] text-slate-400">
-                            What I do
-                        </h2>
-                        <h3 className="mt-3 text-2xl font-semibold text-slate-50 md:text-3xl">
-                            Six focused areas that strengthen your technology foundation
-                        </h3>
+                {/*<section id="what" className="border-t border-slate-900 bg-slate-950 py-20">*/}
+                {/*    <div className="mx-auto max-w-5xl px-4">*/}
+                {/*        <h2 className="text-xs font-semibold uppercase tracking-[0.22em] text-slate-400">*/}
+                {/*            What I do*/}
+                {/*        </h2>*/}
+                {/*        <h3 className="mt-3 text-2xl font-semibold text-slate-50 md:text-3xl">*/}
+                {/*            Six focused areas that strengthen your technology foundation*/}
+                {/*        </h3>*/}
 
-                        <div className="mt-6 grid gap-6 md:grid-cols-2">
-                            <div className="rounded-2xl border border-slate-800 bg-slate-900/70 p-5">
-                                <h4 className="text-base font-semibold text-slate-50">Product Strategy</h4>
-                                <p className="mt-2 text-sm text-slate-300">
-                                    Align business goals with practical, phased technical execution.
-                                </p>
-                            </div>
+                {/*        <div className="mt-6 grid gap-6 md:grid-cols-2">*/}
+                {/*            <div className="rounded-2xl border border-slate-800 bg-slate-900/70 p-5">*/}
+                {/*                <h4 className="text-base font-semibold text-slate-50">Product Strategy</h4>*/}
+                {/*                <p className="mt-2 text-sm text-slate-300">*/}
+                {/*                    Align business goals with practical, phased technical execution.*/}
+                {/*                </p>*/}
+                {/*            </div>*/}
 
-                            <div className="rounded-2xl border border-slate-800 bg-slate-900/70 p-5">
-                                <h4 className="text-base font-semibold text-slate-50">Architecture Design</h4>
-                                <p className="mt-2 text-sm text-slate-300">
-                                    Build systems that remain stable as operations grow.
-                                </p>
-                            </div>
+                {/*            <div className="rounded-2xl border border-slate-800 bg-slate-900/70 p-5">*/}
+                {/*                <h4 className="text-base font-semibold text-slate-50">Architecture Design</h4>*/}
+                {/*                <p className="mt-2 text-sm text-slate-300">*/}
+                {/*                    Build systems that remain stable as operations grow.*/}
+                {/*                </p>*/}
+                {/*            </div>*/}
 
-                            <div className="rounded-2xl border border-slate-800 bg-slate-900/70 p-5">
-                                <h4 className="text-base font-semibold text-slate-50">Team Leadership</h4>
-                                <p className="mt-2 text-sm text-slate-300">
-                                    Guide internal teams and external vendors with clear accountability.
-                                </p>
-                            </div>
+                {/*            <div className="rounded-2xl border border-slate-800 bg-slate-900/70 p-5">*/}
+                {/*                <h4 className="text-base font-semibold text-slate-50">Team Leadership</h4>*/}
+                {/*                <p className="mt-2 text-sm text-slate-300">*/}
+                {/*                    Guide internal teams and external vendors with clear accountability.*/}
+                {/*                </p>*/}
+                {/*            </div>*/}
 
-                            <div className="rounded-2xl border border-slate-800 bg-slate-900/70 p-5">
-                                <h4 className="text-base font-semibold text-slate-50">Cost Optimization</h4>
-                                <p className="mt-2 text-sm text-slate-300">
-                                    Reduce waste, improve efficiency, and prevent expensive rework.
-                                </p>
-                            </div>
+                {/*            <div className="rounded-2xl border border-slate-800 bg-slate-900/70 p-5">*/}
+                {/*                <h4 className="text-base font-semibold text-slate-50">Cost Optimization</h4>*/}
+                {/*                <p className="mt-2 text-sm text-slate-300">*/}
+                {/*                    Reduce waste, improve efficiency, and prevent expensive rework.*/}
+                {/*                </p>*/}
+                {/*            </div>*/}
 
-                            <div className="rounded-2xl border border-slate-800 bg-slate-900/70 p-5">
-                                <h4 className="text-base font-semibold text-slate-50">Engineering Process</h4>
-                                <p className="mt-2 text-sm text-slate-300">
-                                    Introduce structure, documentation, and delivery discipline.
-                                </p>
-                            </div>
+                {/*            <div className="rounded-2xl border border-slate-800 bg-slate-900/70 p-5">*/}
+                {/*                <h4 className="text-base font-semibold text-slate-50">Engineering Process</h4>*/}
+                {/*                <p className="mt-2 text-sm text-slate-300">*/}
+                {/*                    Introduce structure, documentation, and delivery discipline.*/}
+                {/*                </p>*/}
+                {/*            </div>*/}
 
-                            <div className="rounded-2xl border border-slate-800 bg-slate-900/70 p-5">
-                                <h4 className="text-base font-semibold text-slate-50">Tech Due Diligence</h4>
-                                <p className="mt-2 text-sm text-slate-300">
-                                    Evaluate systems, risks, and scalability before key decisions.
-                                </p>
-                            </div>
-                        </div>
-                    </div>
-                </section>
+                {/*            <div className="rounded-2xl border border-slate-800 bg-slate-900/70 p-5">*/}
+                {/*                <h4 className="text-base font-semibold text-slate-50">Tech Due Diligence</h4>*/}
+                {/*                <p className="mt-2 text-sm text-slate-300">*/}
+                {/*                    Evaluate systems, risks, and scalability before key decisions.*/}
+                {/*                </p>*/}
+                {/*            </div>*/}
+                {/*        </div>*/}
+                {/*    </div>*/}
+                {/*</section>*/}
 
-                <section id="method" className="border-t border-slate-900 bg-slate-950 py-20">
-                    <div className="mx-auto max-w-5xl px-4">
-                        <h2 className="text-xs font-semibold uppercase tracking-[0.22em] text-slate-400">
-                            The NorthStar Method
-                        </h2>
-                        <div className="mt-6 grid gap-6 md:grid-cols-2">
-                            <div className="rounded-2xl border border-slate-800 bg-slate-900/70 p-5">
-                                <h4 className="text-base font-semibold text-slate-50">1. Understand the Vision</h4>
-                                <p className="mt-2 text-sm text-slate-300">
-                                    Evaluate operations, workflows, and goals to define technical priorities.
-                                </p>
-                            </div>
+                {/*<section id="method" className="border-t border-slate-900 bg-slate-950 py-20">*/}
+                {/*    <div className="mx-auto max-w-5xl px-4">*/}
+                {/*        <h2 className="text-xs font-semibold uppercase tracking-[0.22em] text-slate-400">*/}
+                {/*            The NorthStar Method*/}
+                {/*        </h2>*/}
+                {/*        <div className="mt-6 grid gap-6 md:grid-cols-2">*/}
+                {/*            <div className="rounded-2xl border border-slate-800 bg-slate-900/70 p-5">*/}
+                {/*                <h4 className="text-base font-semibold text-slate-50">1. Understand the Vision</h4>*/}
+                {/*                <p className="mt-2 text-sm text-slate-300">*/}
+                {/*                    Evaluate operations, workflows, and goals to define technical priorities.*/}
+                {/*                </p>*/}
+                {/*            </div>*/}
 
-                            <div className="rounded-2xl border border-slate-800 bg-slate-900/70 p-5">
-                                <h4 className="text-base font-semibold text-slate-50">2. Design the Roadmap</h4>
-                                <p className="mt-2 text-sm text-slate-300">
-                                    Create phased plans aligned with budget, team capacity, and timing.
-                                </p>
-                            </div>
+                {/*            <div className="rounded-2xl border border-slate-800 bg-slate-900/70 p-5">*/}
+                {/*                <h4 className="text-base font-semibold text-slate-50">2. Design the Roadmap</h4>*/}
+                {/*                <p className="mt-2 text-sm text-slate-300">*/}
+                {/*                    Create phased plans aligned with budget, team capacity, and timing.*/}
+                {/*                </p>*/}
+                {/*            </div>*/}
 
-                            <div className="rounded-2xl border border-slate-800 bg-slate-900/70 p-5">
-                                <h4 className="text-base font-semibold text-slate-50">3. Lead the Build</h4>
-                                <p className="mt-2 text-sm text-slate-300">
-                                    Coordinate teams and vendors to keep delivery consistent and predictable.
-                                </p>
-                            </div>
+                {/*            <div className="rounded-2xl border border-slate-800 bg-slate-900/70 p-5">*/}
+                {/*                <h4 className="text-base font-semibold text-slate-50">3. Lead the Build</h4>*/}
+                {/*                <p className="mt-2 text-sm text-slate-300">*/}
+                {/*                    Coordinate teams and vendors to keep delivery consistent and predictable.*/}
+                {/*                </p>*/}
+                {/*            </div>*/}
 
-                            <div className="rounded-2xl border border-slate-800 bg-slate-900/70 p-5">
-                                <h4 className="text-base font-semibold text-slate-50">4. Review and Scale</h4>
-                                <p className="mt-2 text-sm text-slate-300">
-                                    Refine systems, reduce inefficiencies, and prepare for long-term scale.
-                                </p>
-                            </div>
-                        </div>
-                    </div>
-                </section>
+                {/*            <div className="rounded-2xl border border-slate-800 bg-slate-900/70 p-5">*/}
+                {/*                <h4 className="text-base font-semibold text-slate-50">4. Review and Scale</h4>*/}
+                {/*                <p className="mt-2 text-sm text-slate-300">*/}
+                {/*                    Refine systems, reduce inefficiencies, and prepare for long-term scale.*/}
+                {/*                </p>*/}
+                {/*            </div>*/}
+                {/*        </div>*/}
+                {/*    </div>*/}
+                {/*</section>*/}
 
                 {/*<section id="blog" className="border-t border-slate-900 bg-slate-950 py-20">*/}
                 {/*    <div className="mx-auto max-w-5xl px-4">*/}

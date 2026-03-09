@@ -657,6 +657,12 @@ a {
   outline-offset: 2px;
 }
 
+.blog-audio-player {
+  display: block;
+  width: 100%;
+  margin-top: 1rem;
+}
+
 .mobile-anchor-nav {
   padding-top: 0.625rem;
   padding-bottom: 0.625rem;
