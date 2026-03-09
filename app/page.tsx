@@ -24,7 +24,7 @@ export default function HomePage() {
                             NorthStar CTO
                         </span>
                         <span className="text-lg font-semibold text-slate-50">
-                            Fractional CTO for Growing Businesses
+                            Fractional CTO for Founders
                         </span>
                     </div>
                     <div className="flex items-center gap-3">
@@ -44,33 +44,38 @@ export default function HomePage() {
             </header>
 
             <main className="flex-1 pb-28">
+
+                {/* ── HERO ── */}
                 <section
                     id="home"
                     className="border-slate-900 bg-gradient-to-b from-slate-950 via-slate-950 to-slate-900"
                 >
                     <div className="mx-auto max-w-5xl px-4 py-12 md:py-16">
                         <div className="flex flex-col gap-10 md:flex-row md:items-center">
+
+                            {/* Left — headline + bullets + CTAs */}
                             <div className="md:w-3/5">
                                 <p className="text-xs font-semibold uppercase tracking-[0.25em] text-blue-300">
                                     NorthStar CTO
                                 </p>
 
                                 <h1 className="mt-4 text-3xl font-semibold leading-tight text-slate-50 sm:text-4xl md:text-4xl">
-                                    Build reliable technology.
+                                    The technical leadership
                                     <br />
-                                    Scale with clarity.
+                                    your business needs.
                                 </h1>
 
                                 <p className="mt-5 max-w-xl text-sm text-slate-300">
-                                    Fractional CTO leadership for teams that need senior technical direction,
-                                    stronger execution discipline, and dependable delivery without full-time overhead.
+                                    Senior technical strategy, vendor accountability, and delivery leadership —
+                                    for non-technical founders and growing teams, without the cost of a
+                                    full-time CTO.
                                 </p>
 
                                 <ul className="mt-6 grid max-w-md gap-2 text-sm text-slate-300">
-                                    <li>Business-aligned product and technical roadmap</li>
-                                    <li>Team and vendor accountability</li>
-                                    <li>Architecture decisions that scale cleanly</li>
-                                    <li>Delivery rhythm and risk visibility</li>
+                                    <li>Technical roadmap tied to your business goals</li>
+                                    <li>Vendor and team accountability with measurable outcomes</li>
+                                    <li>Architecture decisions that scale without breaking</li>
+                                    <li>Delivery rhythm and risk visibility across all work</li>
                                 </ul>
 
                                 <div className="mt-6 flex flex-wrap items-center gap-3">
@@ -92,261 +97,326 @@ export default function HomePage() {
                                 </div>
                             </div>
 
+                            {/* Right — Why NorthStar CTO */}
                             <div className="md:w-2/5">
                                 <div className="rounded-2xl border border-slate-800 bg-slate-900/70 p-5">
                                     <h2 className="text-xs font-semibold uppercase tracking-[0.22em] text-slate-400">
-                                        Core offerings
+                                        Why NorthStar CTO
                                     </h2>
-                                    <div className="mt-3 space-y-2 text-sm text-slate-300">
-                                        <p>Product strategy for the next stage of growth</p>
-                                        <p>Architecture governance and modernization planning</p>
-                                        <p>Leadership for teams and delivery operations</p>
-                                        <p>Vendor oversight with measurable accountability</p>
+                                    <div className="mt-4 space-y-3">
+                                        {[
+                                            { label: "No jargon.", detail: "Every conversation in plain language your team can act on." },
+                                            { label: "Month-to-month.", detail: "No contracts or lock-in. Adjust your engagement as you grow." },
+                                            { label: "Direct access.", detail: "You always work with Sanya — no account managers or intermediaries." },
+                                            { label: "8+ years.", detail: "Adobe, SaaS startups, and mission-led nonprofits." },
+                                        ].map(({ label, detail }) => (
+                                            <div key={label} className="text-sm">
+                                                <span className="font-semibold text-slate-200">{label}</span>{" "}
+                                                <span className="text-slate-400">{detail}</span>
+                                            </div>
+                                        ))}
                                     </div>
                                 </div>
                             </div>
-                        </div>
 
-                        {/*<div className="mt-8 rounded-2xl border border-slate-800 bg-slate-900/70 p-5">*/}
-                        {/*    <p className="text-xs font-semibold uppercase tracking-[0.2em] text-slate-400">*/}
-                        {/*        Trusted outcomes*/}
-                        {/*    </p>*/}
-                        {/*    <div className="mt-3 grid gap-3 md:grid-cols-2">*/}
-                        {/*        <p className="text-sm text-slate-200">Reduce technical drift with structured CTO oversight</p>*/}
-                        {/*        <p className="text-sm text-slate-200">Improve delivery confidence before major investments</p>*/}
-                        {/*        <p className="text-sm text-slate-200">Turn vendor output into business-aligned execution</p>*/}
-                        {/*        <p className="text-sm text-slate-200">Maintain senior leadership without full-time cost</p>*/}
-                        {/*    </div>*/}
-                        {/*</div>*/}
+                        </div>
                     </div>
                 </section>
 
+                {/* ── ENGAGEMENT MODELS ── */}
                 <section id="engage" className="border-t border-slate-900 bg-slate-950 py-20">
                     <div className="mx-auto max-w-5xl px-4">
-                        <h2 className="text-xs font-semibold uppercase tracking-[0.22em] text-slate-400">
+                        <p className="text-xs font-semibold uppercase tracking-[0.22em] text-slate-400">
                             Engagement models
-                        </h2>
-                        <h3 className="mt-3 text-2xl font-semibold text-slate-50 md:text-3xl">
-                            Choose the model that matches your stage
-                        </h3>
-                        <p className="mt-4 max-w-xl text-sm text-slate-300">
-                            Every card is clickable and opens a detailed engagement page.
                         </p>
+                        <h2 className="mt-3 text-2xl font-semibold text-slate-50 md:text-3xl">
+                            Choose the model that matches your stage
+                        </h2>
 
-                        <div className="mt-6 grid gap-6 md:grid-cols-2">
+                        <div className="mt-8 grid gap-6 md:grid-cols-2">
                             <Link href="/engagement/starter" className="engagement-card rounded-2xl border border-slate-800 bg-slate-900/70 p-5">
-                                <h4 className="text-base font-semibold text-slate-50">Starter CTO</h4>
+                                <div className="flex items-center justify-between gap-3">
+                                    <h3 className="text-base font-semibold text-slate-50">Starter CTO</h3>
+                                    <span className="tier-badge tier-starter">8 hrs / mo</span>
+                                </div>
                                 <p className="mt-2 text-sm text-slate-300">
-                                    8 hours per month. Oversight, review, and structured guidance.
+                                    Oversight, roadmap review, and structured guidance. For teams with
+                                    developers in place who need senior-level validation and direction.
                                 </p>
                                 <p className="mt-3 text-xs font-semibold uppercase tracking-[0.2em] text-blue-300">
-                                    View engagement details -&gt;
+                                    View details →
                                 </p>
                             </Link>
 
                             <Link href="/engagement/growth" className="engagement-card rounded-2xl border border-slate-800 bg-slate-900/70 p-5">
-                                <h4 className="text-base font-semibold text-slate-50">Growth CTO</h4>
+                                <div className="flex items-center justify-between gap-3">
+                                    <h3 className="text-base font-semibold text-slate-50">Growth CTO</h3>
+                                    <span className="tier-badge tier-growth">20 hrs / mo</span>
+                                </div>
                                 <p className="mt-2 text-sm text-slate-300">
-                                    20 hours per month. Active team leadership and delivery management.
+                                    Active team leadership and delivery management. For teams in build mode
+                                    where execution discipline and sprint oversight are critical.
                                 </p>
                                 <p className="mt-3 text-xs font-semibold uppercase tracking-[0.2em] text-blue-300">
-                                    View engagement details -&gt;
+                                    View details →
                                 </p>
                             </Link>
 
                             <Link href="/engagement/scale" className="engagement-card rounded-2xl border border-slate-800 bg-slate-900/70 p-5">
-                                <h4 className="text-base font-semibold text-slate-50">Scale CTO</h4>
+                                <div className="flex items-center justify-between gap-3">
+                                    <h3 className="text-base font-semibold text-slate-50">Scale CTO</h3>
+                                    <span className="tier-badge tier-scale">40 hrs / mo</span>
+                                </div>
                                 <p className="mt-2 text-sm text-slate-300">
-                                    40 hours per month. Executive-level ownership across systems and teams.
+                                    Executive-level ownership across systems, teams, and strategy. For
+                                    organizations where technology directly impacts operations and revenue.
                                 </p>
                                 <p className="mt-3 text-xs font-semibold uppercase tracking-[0.2em] text-blue-300">
-                                    View engagement details -&gt;
+                                    View details →
                                 </p>
                             </Link>
 
                             <Link href="/engagement/on-demand" className="engagement-card rounded-2xl border border-slate-800 bg-slate-900/70 p-5">
-                                <h4 className="text-base font-semibold text-slate-50">On-Demand Advisory</h4>
+                                <div className="flex items-center justify-between gap-3">
+                                    <h3 className="text-base font-semibold text-slate-50">On-Demand Advisory</h3>
+                                    <span className="tier-badge tier-ondemand">Project scope</span>
+                                </div>
                                 <p className="mt-2 text-sm text-slate-300">
-                                    Audits, vendor reviews, and strategic decisions with independent judgment.
+                                    Audits, vendor reviews, and strategic decisions with independent
+                                    executive judgment. No recurring commitment required.
                                 </p>
                                 <p className="mt-3 text-xs font-semibold uppercase tracking-[0.2em] text-blue-300">
-                                    View engagement details -&gt;
+                                    View details →
                                 </p>
                             </Link>
+                        </div>
+
+                        {/* Comparison table */}
+                        <div className="mt-10">
+                            <p className="text-xs font-semibold uppercase tracking-[0.22em] text-slate-500">
+                                Compare models at a glance
+                            </p>
+                            <div className="comparison-table-wrap mt-4">
+                                <table className="comparison-table">
+                                    <thead>
+                                        <tr>
+                                            <th></th>
+                                            <th>Starter</th>
+                                            <th>Growth</th>
+                                            <th>Scale</th>
+                                            <th>On-Demand</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <tr>
+                                            <td>Hours / month</td>
+                                            <td>~8 hrs</td>
+                                            <td>~20 hrs</td>
+                                            <td>~40 hrs</td>
+                                            <td>Project-based</td>
+                                        </tr>
+                                        <tr>
+                                            <td>Cadence</td>
+                                            <td>Monthly check-in</td>
+                                            <td>Weekly oversight</td>
+                                            <td>Executive collaboration</td>
+                                            <td>As needed</td>
+                                        </tr>
+                                        <tr>
+                                            <td>Focus</td>
+                                            <td>Oversight & validation</td>
+                                            <td>Execution & leadership</td>
+                                            <td>Full ownership</td>
+                                            <td>Single decision or audit</td>
+                                        </tr>
+                                        <tr>
+                                            <td>Best for</td>
+                                            <td>Teams with devs, no CTO</td>
+                                            <td>Active build / expansion</td>
+                                            <td>Complex operations</td>
+                                            <td>One-time need</td>
+                                        </tr>
+                                        <tr>
+                                            <td>Commitment</td>
+                                            <td>Month-to-month</td>
+                                            <td>Month-to-month</td>
+                                            <td>Month-to-month</td>
+                                            <td>Fixed scope</td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </div>
                         </div>
                     </div>
                 </section>
 
-                {/*<section id="why" className="border-t border-slate-900 bg-slate-950 py-20">*/}
-                {/*    <div className="mx-auto max-w-5xl px-4">*/}
-                {/*        <h2 className="text-xs font-semibold uppercase tracking-[0.22em] text-slate-400">*/}
-                {/*            Why a Fractional CTO*/}
-                {/*        </h2>*/}
-                {/*        <h3 className="mt-3 text-2xl font-semibold text-slate-50 md:text-3xl">*/}
-                {/*            Growing teams bring ambition. Technology needs direction.*/}
-                {/*        </h3>*/}
+                {/* ── WHAT I DO ── */}
+                <section className="border-t border-slate-900 bg-slate-950 py-20">
+                    <div className="mx-auto max-w-5xl px-4">
+                        <p className="text-xs font-semibold uppercase tracking-[0.22em] text-slate-400">
+                            What I do
+                        </p>
+                        <h2 className="mt-3 text-2xl font-semibold text-slate-50 md:text-3xl">
+                            Six areas that strengthen your technology foundation
+                        </h2>
 
-                {/*        <div className="mt-6 grid gap-6 md:grid-cols-2">*/}
-                {/*            <div className="rounded-2xl border border-slate-800 bg-slate-900/70 p-5">*/}
-                {/*                <p className="text-sm text-slate-200">*/}
-                {/*                    Clear business goals, unclear technical roadmap*/}
-                {/*                </p>*/}
-                {/*                <p className="mt-3 text-sm text-slate-300">*/}
-                {/*                    Small teams often rely on developers without structured technical leadership.*/}
-                {/*                </p>*/}
-                {/*            </div>*/}
+                        <div className="mt-8 grid gap-5 md:grid-cols-2">
+                            {[
+                                {
+                                    title: "Product Strategy",
+                                    desc: "Align your business goals with a practical, phased technical roadmap your team can actually execute.",
+                                },
+                                {
+                                    title: "Architecture Design",
+                                    desc: "Build systems that remain stable, maintainable, and cost-effective as your product and team grow.",
+                                },
+                                {
+                                    title: "Team & Vendor Leadership",
+                                    desc: "Hold internal developers and external agencies to clear, measurable standards — with accountability built in.",
+                                },
+                                {
+                                    title: "Cost Optimization",
+                                    desc: "Identify waste, reduce rework, and prevent the expensive technical debt that compounds quietly over time.",
+                                },
+                                {
+                                    title: "Engineering Process",
+                                    desc: "Introduce delivery discipline, documentation, and consistent structure so your team builds with predictability.",
+                                },
+                                {
+                                    title: "Tech Due Diligence",
+                                    desc: "Evaluate systems, risks, and scalability before key decisions, major investments, or vendor commitments.",
+                                },
+                            ].map(({ title, desc }) => (
+                                <div
+                                    key={title}
+                                    className="rounded-2xl border border-slate-800 bg-slate-900/70 p-5"
+                                >
+                                    <h3 className="text-base font-semibold text-slate-50">{title}</h3>
+                                    <p className="mt-2 text-sm text-slate-300">{desc}</p>
+                                </div>
+                            ))}
+                        </div>
+                    </div>
+                </section>
 
-                {/*            <div className="rounded-2xl border border-slate-800 bg-slate-900/70 p-5">*/}
-                {/*                <p className="text-sm text-slate-200">*/}
-                {/*                    Vendors ship features, not long-term technical stability*/}
-                {/*                </p>*/}
-                {/*                <p className="mt-3 text-sm text-slate-300">*/}
-                {/*                    Without oversight, systems become harder to maintain and more expensive over time.*/}
-                {/*                </p>*/}
-                {/*            </div>*/}
-                {/*        </div>*/}
-                {/*    </div>*/}
-                {/*</section>*/}
+                {/* ── ABOUT SANYA ── */}
+                <section className="border-t border-slate-900 bg-slate-950 py-20">
+                    <div className="mx-auto max-w-5xl px-4">
+                        <p className="text-xs font-semibold uppercase tracking-[0.22em] text-slate-400">
+                            About
+                        </p>
+                        <div className="mt-6 flex flex-col gap-8 md:flex-row md:items-start">
 
-                {/*<section id="what" className="border-t border-slate-900 bg-slate-950 py-20">*/}
-                {/*    <div className="mx-auto max-w-5xl px-4">*/}
-                {/*        <h2 className="text-xs font-semibold uppercase tracking-[0.22em] text-slate-400">*/}
-                {/*            What I do*/}
-                {/*        </h2>*/}
-                {/*        <h3 className="mt-3 text-2xl font-semibold text-slate-50 md:text-3xl">*/}
-                {/*            Six focused areas that strengthen your technology foundation*/}
-                {/*        </h3>*/}
+                            <div className="md:w-3/5">
+                                <h2 className="text-2xl font-semibold text-slate-50">Sanya Khurana</h2>
+                                <p className="mt-1 text-xs font-semibold uppercase tracking-[0.18em] text-blue-300">
+                                    Computer Scientist · CTO · Fractional CTO
+                                </p>
+                                <p className="mt-5 text-sm text-slate-300">
+                                    8+ years building and leading engineering and product teams across
+                                    creative technology, SaaS startups, and nonprofits. Previously a
+                                    Computer Scientist at Adobe for five years, then CTO and Co-Founder
+                                    of her own technology venture.
+                                </p>
+                                <p className="mt-3 text-sm text-slate-300">
+                                    Now she brings that executive-level technical leadership to growing
+                                    teams as a Fractional CTO — in clear language, without the jargon,
+                                    and without the full-time cost.
+                                </p>
+                                <a
+                                    href={CALENDLY_URL}
+                                    target="_blank"
+                                    rel="noopener noreferrer"
+                                    className="mt-6 inline-flex items-center rounded-full border border-slate-700 px-4 py-2 text-sm font-medium text-slate-200 hover:border-slate-500 hover:text-slate-50"
+                                >
+                                    Book a 30-minute intro call →
+                                </a>
+                            </div>
 
-                {/*        <div className="mt-6 grid gap-6 md:grid-cols-2">*/}
-                {/*            <div className="rounded-2xl border border-slate-800 bg-slate-900/70 p-5">*/}
-                {/*                <h4 className="text-base font-semibold text-slate-50">Product Strategy</h4>*/}
-                {/*                <p className="mt-2 text-sm text-slate-300">*/}
-                {/*                    Align business goals with practical, phased technical execution.*/}
-                {/*                </p>*/}
-                {/*            </div>*/}
+                            <div className="md:w-2/5">
+                                <div className="rounded-2xl border border-slate-800 bg-slate-900/70 p-5">
+                                    <p className="text-xs font-semibold uppercase tracking-[0.22em] text-slate-400">
+                                        Background
+                                    </p>
+                                    <div className="mt-4">
+                                        <div className="cred-row">
+                                            <p className="text-sm font-medium text-slate-200">Computer Scientist</p>
+                                            <p className="mt-0.5 text-xs text-slate-500">Adobe · 5 years</p>
+                                        </div>
+                                        <div className="cred-row">
+                                            <p className="text-sm font-medium text-slate-200">CTO & Co-Founder</p>
+                                            <p className="mt-0.5 text-xs text-slate-500">Technology startup</p>
+                                        </div>
+                                        <div className="cred-row">
+                                            <p className="text-sm font-medium text-slate-200">Fractional CTO</p>
+                                            <p className="mt-0.5 text-xs text-slate-500">Creative Tech · SaaS · Nonprofits</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
 
-                {/*            <div className="rounded-2xl border border-slate-800 bg-slate-900/70 p-5">*/}
-                {/*                <h4 className="text-base font-semibold text-slate-50">Architecture Design</h4>*/}
-                {/*                <p className="mt-2 text-sm text-slate-300">*/}
-                {/*                    Build systems that remain stable as operations grow.*/}
-                {/*                </p>*/}
-                {/*            </div>*/}
+                        </div>
+                    </div>
+                </section>
 
-                {/*            <div className="rounded-2xl border border-slate-800 bg-slate-900/70 p-5">*/}
-                {/*                <h4 className="text-base font-semibold text-slate-50">Team Leadership</h4>*/}
-                {/*                <p className="mt-2 text-sm text-slate-300">*/}
-                {/*                    Guide internal teams and external vendors with clear accountability.*/}
-                {/*                </p>*/}
-                {/*            </div>*/}
+                {/* ── HOW IT WORKS ── */}
+                <section className="border-t border-slate-900 bg-slate-950 py-20">
+                    <div className="mx-auto max-w-5xl px-4">
+                        <p className="text-xs font-semibold uppercase tracking-[0.22em] text-slate-400">
+                            How it works
+                        </p>
+                        <h2 className="mt-3 text-2xl font-semibold text-slate-50 md:text-3xl">
+                            Clear process, predictable results
+                        </h2>
 
-                {/*            <div className="rounded-2xl border border-slate-800 bg-slate-900/70 p-5">*/}
-                {/*                <h4 className="text-base font-semibold text-slate-50">Cost Optimization</h4>*/}
-                {/*                <p className="mt-2 text-sm text-slate-300">*/}
-                {/*                    Reduce waste, improve efficiency, and prevent expensive rework.*/}
-                {/*                </p>*/}
-                {/*            </div>*/}
+                        <div className="process-grid mt-8 md:grid-cols-2">
+                            {[
+                                {
+                                    step: "01",
+                                    title: "Understand Your Vision",
+                                    desc: "Evaluate your operations, goals, and current technical state. Identify what's working and what's in the way.",
+                                },
+                                {
+                                    step: "02",
+                                    title: "Design the Roadmap",
+                                    desc: "Create a phased plan tied to your budget, team capacity, and business timing — nothing theoretical.",
+                                },
+                                {
+                                    step: "03",
+                                    title: "Lead the Build",
+                                    desc: "Coordinate teams and vendors to deliver consistently and predictably, with visible progress throughout.",
+                                },
+                                {
+                                    step: "04",
+                                    title: "Review and Scale",
+                                    desc: "Refine systems, reduce inefficiencies, and build the foundation for long-term growth without fragility.",
+                                },
+                            ].map(({ step, title, desc }) => (
+                                <div key={step} className="process-step">
+                                    <span className="process-number">{step}</span>
+                                    <div>
+                                        <p className="text-base font-semibold text-slate-50">{title}</p>
+                                        <p className="mt-1 text-sm text-slate-300">{desc}</p>
+                                    </div>
+                                </div>
+                            ))}
+                        </div>
+                    </div>
+                </section>
 
-                {/*            <div className="rounded-2xl border border-slate-800 bg-slate-900/70 p-5">*/}
-                {/*                <h4 className="text-base font-semibold text-slate-50">Engineering Process</h4>*/}
-                {/*                <p className="mt-2 text-sm text-slate-300">*/}
-                {/*                    Introduce structure, documentation, and delivery discipline.*/}
-                {/*                </p>*/}
-                {/*            </div>*/}
-
-                {/*            <div className="rounded-2xl border border-slate-800 bg-slate-900/70 p-5">*/}
-                {/*                <h4 className="text-base font-semibold text-slate-50">Tech Due Diligence</h4>*/}
-                {/*                <p className="mt-2 text-sm text-slate-300">*/}
-                {/*                    Evaluate systems, risks, and scalability before key decisions.*/}
-                {/*                </p>*/}
-                {/*            </div>*/}
-                {/*        </div>*/}
-                {/*    </div>*/}
-                {/*</section>*/}
-
-                {/*<section id="method" className="border-t border-slate-900 bg-slate-950 py-20">*/}
-                {/*    <div className="mx-auto max-w-5xl px-4">*/}
-                {/*        <h2 className="text-xs font-semibold uppercase tracking-[0.22em] text-slate-400">*/}
-                {/*            The NorthStar Method*/}
-                {/*        </h2>*/}
-                {/*        <div className="mt-6 grid gap-6 md:grid-cols-2">*/}
-                {/*            <div className="rounded-2xl border border-slate-800 bg-slate-900/70 p-5">*/}
-                {/*                <h4 className="text-base font-semibold text-slate-50">1. Understand the Vision</h4>*/}
-                {/*                <p className="mt-2 text-sm text-slate-300">*/}
-                {/*                    Evaluate operations, workflows, and goals to define technical priorities.*/}
-                {/*                </p>*/}
-                {/*            </div>*/}
-
-                {/*            <div className="rounded-2xl border border-slate-800 bg-slate-900/70 p-5">*/}
-                {/*                <h4 className="text-base font-semibold text-slate-50">2. Design the Roadmap</h4>*/}
-                {/*                <p className="mt-2 text-sm text-slate-300">*/}
-                {/*                    Create phased plans aligned with budget, team capacity, and timing.*/}
-                {/*                </p>*/}
-                {/*            </div>*/}
-
-                {/*            <div className="rounded-2xl border border-slate-800 bg-slate-900/70 p-5">*/}
-                {/*                <h4 className="text-base font-semibold text-slate-50">3. Lead the Build</h4>*/}
-                {/*                <p className="mt-2 text-sm text-slate-300">*/}
-                {/*                    Coordinate teams and vendors to keep delivery consistent and predictable.*/}
-                {/*                </p>*/}
-                {/*            </div>*/}
-
-                {/*            <div className="rounded-2xl border border-slate-800 bg-slate-900/70 p-5">*/}
-                {/*                <h4 className="text-base font-semibold text-slate-50">4. Review and Scale</h4>*/}
-                {/*                <p className="mt-2 text-sm text-slate-300">*/}
-                {/*                    Refine systems, reduce inefficiencies, and prepare for long-term scale.*/}
-                {/*                </p>*/}
-                {/*            </div>*/}
-                {/*        </div>*/}
-                {/*    </div>*/}
-                {/*</section>*/}
-
-                {/*<section id="blog" className="border-t border-slate-900 bg-slate-950 py-20">*/}
-                {/*    <div className="mx-auto max-w-5xl px-4">*/}
-                {/*        <h2 className="text-xs font-semibold uppercase tracking-[0.22em] text-slate-400">*/}
-                {/*            Insights*/}
-                {/*        </h2>*/}
-                {/*        <h3 className="mt-3 text-2xl font-semibold text-slate-50 md:text-3xl">*/}
-                {/*            Blog and video library*/}
-                {/*        </h3>*/}
-                {/*        <p className="mt-4 max-w-xl text-sm text-slate-300">*/}
-                {/*            Publish written posts and video content from one place. Add new entries by updating the posts file in the codebase.*/}
-                {/*        </p>*/}
-
-                {/*        <div className="mt-6 grid gap-6 md:grid-cols-2">*/}
-                {/*            <Link href="/blog" className="engagement-card rounded-2xl border border-slate-800 bg-slate-900/70 p-5">*/}
-                {/*                <h4 className="text-base font-semibold text-slate-50">Open Blog</h4>*/}
-                {/*                <p className="mt-2 text-sm text-slate-300">*/}
-                {/*                    Read articles and watch published videos.*/}
-                {/*                </p>*/}
-                {/*                <p className="mt-3 text-xs font-semibold uppercase tracking-[0.2em] text-blue-300">*/}
-                {/*                    Browse all posts -&gt;*/}
-                {/*                </p>*/}
-                {/*            </Link>*/}
-
-                {/*            /!*<div className="rounded-2xl border border-slate-800 bg-slate-900/70 p-5">*!/*/}
-                {/*            /!*    <h4 className="text-base font-semibold text-slate-50">Content workflow</h4>*!/*/}
-                {/*            /!*    <p className="mt-2 text-sm text-slate-300">*!/*/}
-                {/*            /!*        Add a new post or video in one file, then deploy. No extra CMS needed.*!/*/}
-                {/*            /!*    </p>*!/*/}
-                {/*            /!*    <p className="mt-3 text-xs text-slate-400">*!/*/}
-                {/*            /!*        Supports text posts, YouTube embeds, and local video links.*!/*/}
-                {/*            /!*    </p>*!/*/}
-                {/*            /!*</div>*!/*/}
-                {/*        </div>*/}
-                {/*    </div>*/}
-                {/*</section>*/}
-
+                {/* ── CONTACT ── */}
                 <section id="contact" className="border-t border-slate-900 bg-slate-950 py-20">
                     <div className="mx-auto max-w-5xl px-4">
-                        <h2 className="text-xs font-semibold uppercase tracking-[0.22em] text-slate-400">
-                            Start building your North Star
+                        <p className="text-xs font-semibold uppercase tracking-[0.22em] text-slate-400">
+                            Get started
+                        </p>
+                        <h2 className="mt-3 text-2xl font-semibold text-slate-50 md:text-3xl">
+                            Clarity first. Commitment second.
                         </h2>
-                        <h3 className="mt-3 text-2xl font-semibold text-slate-50 md:text-3xl">
-                            Clarity first. Investment second.
-                        </h3>
 
                         <p className="mt-4 max-w-xl text-sm text-slate-300">
-                            Book a focused 30-minute call to align priorities, identify risks, and decide the right engagement model.
+                            Book a focused 30-minute call to align on priorities, identify risks, and
+                            decide the right engagement model together.
                         </p>
 
                         <div className="mt-6 flex flex-wrap items-center gap-3">
@@ -365,18 +435,57 @@ export default function HomePage() {
                             >
                                 Read the Blog
                             </Link>
+                        </div>
 
-                            <p className="mt-3 text-xs text-slate-400">
-                                Or email directly at{" "}
-                                <a href={emailHref} className="font-medium text-blue-300 underline-offset-2 hover:underline">
-                                    {EMAIL}
-                                </a>
+                        <p className="mt-4 text-xs text-slate-400">
+                            Or email directly at{" "}
+                            <a href={emailHref} className="font-medium text-blue-300 underline-offset-2 hover:underline">
+                                {EMAIL}
+                            </a>
+                        </p>
+
+                        {/* What happens after you book */}
+                        <div className="mt-8 rounded-2xl border border-slate-800 bg-slate-900/70 p-5">
+                            <p className="text-xs font-semibold uppercase tracking-[0.2em] text-slate-400">
+                                What happens after you book
                             </p>
+                            <div className="mt-4 flex flex-col gap-4 md:flex-row">
+                                {[
+                                    { num: "1", text: "Calendar confirmation sent immediately after booking." },
+                                    { num: "2", text: "30-minute call — priorities, current risks, and engagement fit." },
+                                    { num: "3", text: "You leave with a clear next step. No obligation to continue." },
+                                ].map(({ num, text }) => (
+                                    <div key={num} className="flex items-start gap-3 text-sm text-slate-300">
+                                        <span
+                                            style={{
+                                                flexShrink: 0,
+                                                display: "flex",
+                                                alignItems: "center",
+                                                justifyContent: "center",
+                                                width: "1.25rem",
+                                                height: "1.25rem",
+                                                borderRadius: "9999px",
+                                                backgroundColor: "var(--blue-500)",
+                                                color: "var(--slate-950)",
+                                                fontWeight: 600,
+                                                fontSize: "0.7rem",
+                                                marginTop: "0.1rem",
+                                                lineHeight: 1,
+                                            }}
+                                        >
+                                            {num}
+                                        </span>
+                                        <span>{text}</span>
+                                    </div>
+                                ))}
+                            </div>
                         </div>
                     </div>
                 </section>
+
             </main>
 
+            {/* Mobile CTA bar */}
             <div className="fixed bottom-0 left-0 right-0 z-50 border-t border-slate-800 bg-slate-950/85 backdrop-blur px-4 py-3 md:hidden">
                 <a
                     href={CALENDLY_URL}
@@ -385,27 +494,9 @@ export default function HomePage() {
                     className="inline-flex items-center justify-between rounded-full bg-blue-500 px-5 py-2.5 text-sm font-semibold text-slate-950 shadow-md shadow-blue-500/30"
                     style={{ width: "100%" }}
                 >
-                    Book a 30-Minute Call
+                    Book a 30-Minute Call →
                 </a>
             </div>
-
-            <footer className="border-t border-slate-900 bg-slate-950 py-6">
-                <div className="mx-auto max-w-5xl px-4 text-sm text-slate-400">
-                    <div className="flex flex-col items-center justify-between gap-3 md:flex-row">
-                        <div>
-                            <p className="text-slate-50 font-semibold">NorthStar CTO</p>
-                            <p>Fractional CTO services for growing businesses and mission-led teams.</p>
-                        </div>
-
-                        <div className="mt-3 md:mt-0">
-                            <p className="text-xs text-slate-300">
-                                Product Strategy | Architecture | Tech Leadership | Team Management
-                            </p>
-                            <p className="mt-2 text-xs text-slate-500">© {new Date().getFullYear()} Sanya Khurana</p>
-                        </div>
-                    </div>
-                </div>
-            </footer>
         </div>
     );
 }

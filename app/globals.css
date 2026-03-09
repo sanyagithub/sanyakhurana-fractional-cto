@@ -777,3 +777,229 @@ a {
 section {
   scroll-margin-top: 4.5rem;
 }
+
+/* =========================
+   TIER BADGES
+   ========================= */
+
+.tier-badge {
+  display: inline-flex;
+  align-items: center;
+  font-size: 0.6875rem;
+  font-weight: 600;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  padding: 0.2rem 0.55rem;
+  border-radius: 9999px;
+  line-height: 1.4;
+  white-space: nowrap;
+}
+
+.tier-starter {
+  background: rgba(128, 146, 167, 0.12);
+  color: var(--slate-300);
+  border: 1px solid rgba(128, 146, 167, 0.2);
+}
+
+.tier-growth {
+  background: rgba(0, 112, 243, 0.12);
+  color: var(--blue-300);
+  border: 1px solid rgba(0, 112, 243, 0.25);
+}
+
+.tier-scale {
+  background: rgba(248, 250, 252, 0.07);
+  color: var(--slate-100);
+  border: 1px solid rgba(248, 250, 252, 0.15);
+}
+
+.tier-ondemand {
+  background: transparent;
+  color: var(--slate-400);
+  border: 1px dashed rgba(128, 146, 167, 0.35);
+}
+
+/* =========================
+   CHECK LIST
+   ========================= */
+
+.check-list {
+  border: 1px solid var(--border-subtle);
+  border-radius: 0.9rem;
+  background: rgba(11, 18, 27, 0.85);
+  overflow: hidden;
+}
+
+.check-list-item {
+  display: flex;
+  align-items: flex-start;
+  gap: 0.875rem;
+  padding: 1rem 1.25rem;
+  border-bottom: 1px solid rgba(128, 146, 167, 0.1);
+  font-size: 0.9375rem;
+  color: var(--slate-300);
+  line-height: 1.55rem;
+}
+
+.check-list-item:last-child {
+  border-bottom: none;
+}
+
+.check-icon {
+  flex-shrink: 0;
+  margin-top: 0.2rem;
+}
+
+/* =========================
+   COMPARISON TABLE
+   ========================= */
+
+.comparison-table-wrap {
+  overflow-x: auto;
+  border-radius: 0.9rem;
+  border: 1px solid var(--border-subtle);
+}
+
+.comparison-table {
+  width: 100%;
+  border-collapse: collapse;
+  min-width: 34rem;
+}
+
+.comparison-table th {
+  padding: 0.75rem 1rem;
+  text-align: left;
+  font-size: 0.75rem;
+  font-weight: 600;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  color: var(--slate-400);
+  background: rgba(11, 18, 27, 0.95);
+  border-bottom: 1px solid rgba(128, 146, 167, 0.12);
+  white-space: nowrap;
+}
+
+.comparison-table th:first-child {
+  color: var(--slate-500);
+  border-right: 1px solid rgba(128, 146, 167, 0.1);
+}
+
+.comparison-table td {
+  padding: 0.875rem 1rem;
+  font-size: 0.875rem;
+  color: var(--slate-300);
+  border-bottom: 1px solid rgba(128, 146, 167, 0.07);
+  vertical-align: top;
+}
+
+.comparison-table td:first-child {
+  font-weight: 500;
+  color: var(--slate-200);
+  background: rgba(7, 11, 18, 0.5);
+  white-space: nowrap;
+  border-right: 1px solid rgba(128, 146, 167, 0.1);
+}
+
+.comparison-table tbody tr:last-child td {
+  border-bottom: none;
+}
+
+/* =========================
+   PROCESS STEPS
+   ========================= */
+
+.process-grid {
+  display: grid;
+  gap: 1px;
+  background: rgba(128, 146, 167, 0.12);
+  border: 1px solid rgba(128, 146, 167, 0.12);
+  border-radius: 0.9rem;
+  overflow: hidden;
+}
+
+.process-step {
+  display: flex;
+  align-items: flex-start;
+  gap: 1rem;
+  padding: 1.25rem 1.375rem;
+  background: rgba(11, 18, 27, 0.85);
+}
+
+.process-number {
+  flex-shrink: 0;
+  font-size: 1.25rem;
+  font-weight: 600;
+  color: var(--blue-300);
+  opacity: 0.45;
+  line-height: 1.65rem;
+}
+
+/* =========================
+   CREDENTIAL ROWS (About)
+   ========================= */
+
+.cred-row {
+  padding: 0.625rem 0;
+  border-bottom: 1px solid rgba(128, 146, 167, 0.1);
+}
+
+.cred-row:last-child {
+  border-bottom: none;
+}
+
+/* =========================
+   FOOTER LINKS
+   ========================= */
+
+.footer-link {
+  display: block;
+  color: var(--slate-400);
+  font-size: 0.9375rem;
+}
+
+.footer-link:hover {
+  color: var(--slate-50);
+}
+
+/* =========================
+   EXTRA UTILITIES
+   ========================= */
+
+.block {
+  display: block;
+}
+
+.gap-4 {
+  gap: 1rem;
+}
+
+.gap-8 {
+  gap: 2rem;
+}
+
+.gap-12 {
+  gap: 3rem;
+}
+
+.mt-0\.5 {
+  margin-top: 0.125rem;
+}
+
+.mb-2 {
+  margin-bottom: 0.5rem;
+}
+
+.md\:justify-between {
+  justify-content: flex-start;
+}
+
+@media (min-width: 768px) {
+  .md\:justify-between {
+    justify-content: space-between;
+  }
+
+  .md\:grid-cols-3 {
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+  }
+}
+
