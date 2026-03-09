@@ -2,6 +2,7 @@
 import "./globals.css";
 import type { Metadata } from "next";
 import React from "react";
+import Footer from "./components/Footer";
 
 export const metadata: Metadata = {
     title: "Sanya Khurana • Fractional CTO",
@@ -18,6 +19,7 @@ export default function RootLayout({
         <html lang="en">
         <body className="bg-slate-950 text-slate-50 antialiased">
         {children}
+        <Footer />
         </body>
         </html>
     );
