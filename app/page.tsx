@@ -107,17 +107,17 @@ export default function HomePage() {
                             </div>
                         </div>
 
-                        <div className="mt-8 rounded-2xl border border-slate-800 bg-slate-900/70 p-5">
-                            <p className="text-xs font-semibold uppercase tracking-[0.2em] text-slate-400">
-                                Trusted outcomes
-                            </p>
-                            <div className="mt-3 grid gap-3 md:grid-cols-2">
-                                <p className="text-sm text-slate-200">Reduce technical drift with structured CTO oversight</p>
-                                <p className="text-sm text-slate-200">Improve delivery confidence before major investments</p>
-                                <p className="text-sm text-slate-200">Turn vendor output into business-aligned execution</p>
-                                <p className="text-sm text-slate-200">Maintain senior leadership without full-time cost</p>
-                            </div>
-                        </div>
+                        {/*<div className="mt-8 rounded-2xl border border-slate-800 bg-slate-900/70 p-5">*/}
+                        {/*    <p className="text-xs font-semibold uppercase tracking-[0.2em] text-slate-400">*/}
+                        {/*        Trusted outcomes*/}
+                        {/*    </p>*/}
+                        {/*    <div className="mt-3 grid gap-3 md:grid-cols-2">*/}
+                        {/*        <p className="text-sm text-slate-200">Reduce technical drift with structured CTO oversight</p>*/}
+                        {/*        <p className="text-sm text-slate-200">Improve delivery confidence before major investments</p>*/}
+                        {/*        <p className="text-sm text-slate-200">Turn vendor output into business-aligned execution</p>*/}
+                        {/*        <p className="text-sm text-slate-200">Maintain senior leadership without full-time cost</p>*/}
+                        {/*    </div>*/}
+                        {/*</div>*/}
                     </div>
                 </section>
 
