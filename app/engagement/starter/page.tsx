@@ -5,9 +5,24 @@ const calendlyHref =
     "https://calendly.com/sanya-6/1-1-call-with-sanya?hide_event_type_details=1&hide_gdpr_banner=1";
 
 export const metadata = {
-    title: "Starter Fractional CTO | NorthStar CTO",
+    title: "Starter CTO — Fractional CTO Oversight for Small Teams",
     description:
-        "Starter CTO engagement for growing businesses that need structured technical oversight and vendor accountability without full-time cost.",
+        "Fractional CTO oversight for businesses with developers in place but no technical executive. Monthly roadmap review, vendor accountability, and architecture validation — without full-time cost.",
+    alternates: {
+        canonical: "/engagement/starter",
+    },
+    openGraph: {
+        title: "Starter CTO — Fractional CTO Oversight for Small Teams | NorthStar CTO",
+        description:
+            "Monthly roadmap review, vendor accountability, and architecture validation for growing teams — without the cost of a full-time CTO.",
+        url: "/engagement/starter",
+        type: "website",
+    },
+    twitter: {
+        title: "Starter CTO — Fractional CTO Oversight for Small Teams | NorthStar CTO",
+        description:
+            "Monthly roadmap review, vendor accountability, and architecture validation for growing teams — without the cost of a full-time CTO.",
+    },
 };
 
 const included = [

@@ -4,10 +4,27 @@ import type { Metadata } from "next";
 import React from "react";
 import Footer from "./components/Footer";
 
+// ⚠️ Update SITE_URL to your live domain before deploying
+const SITE_URL = process.env.NEXT_PUBLIC_SITE_URL ?? "https://northstarcto.com";
+
 export const metadata: Metadata = {
-    title: "Sanya Khurana • Fractional CTO",
+    metadataBase: new URL(SITE_URL),
+    title: {
+        template: "%s | NorthStar CTO",
+        default: "Fractional CTO for Founders | NorthStar CTO — Sanya Khurana",
+    },
     description:
-        "Fractional CTO for non-tech founders and nonprofits. Clarity, strategy, and hands-on tech support without the jargon.",
+        "NorthStar CTO provides Fractional CTO services for non-technical founders and growing teams. Senior technical strategy, vendor accountability, and delivery leadership — without the full-time cost.",
+    openGraph: {
+        siteName: "NorthStar CTO",
+        type: "website",
+        locale: "en_GB",
+        alternateLocale: ["en_US"],
+    },
+    twitter: {
+        card: "summary_large_image",
+        site: "@northstarcto",
+    },
 };
 
 export default function RootLayout({

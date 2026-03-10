@@ -12,6 +12,21 @@ export const metadata = {
     title: "Fractional CTO for Growing Businesses | NorthStar CTO — Sanya Khurana",
     description:
         "NorthStar CTO provides Fractional CTO services for growing businesses, small teams, and mission-led organizations. Bring clarity, structure, and reliable technical leadership to your product and operations.",
+    alternates: {
+        canonical: "/",
+    },
+    openGraph: {
+        title: "Fractional CTO for Growing Businesses | NorthStar CTO",
+        description:
+            "Senior technical strategy, vendor accountability, and delivery leadership for non-technical founders — without the full-time CTO cost.",
+        url: "/",
+        type: "website",
+    },
+    twitter: {
+        title: "Fractional CTO for Growing Businesses | NorthStar CTO",
+        description:
+            "Senior technical strategy, vendor accountability, and delivery leadership for non-technical founders — without the full-time CTO cost.",
+    },
 };
 
 export default function HomePage() {
