@@ -4,8 +4,7 @@ import type { Metadata } from "next";
 import React from "react";
 import Footer from "./components/Footer";
 
-// ⚠️ Update SITE_URL to your live domain before deploying
-const SITE_URL = process.env.NEXT_PUBLIC_SITE_URL ?? "https://northstarcto.com";
+const SITE_URL = process.env.NEXT_PUBLIC_SITE_URL ?? "https://main.d1ga8qx66iqcsz.amplifyapp.com";
 
 export const metadata: Metadata = {
     metadataBase: new URL(SITE_URL),
