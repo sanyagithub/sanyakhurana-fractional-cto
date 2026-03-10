@@ -35,7 +35,7 @@ export default function HomePage() {
                             href={CALENDLY_URL}
                             target="_blank"
                             rel="noopener noreferrer"
-                            className="ml-4 inline-flex items-center rounded-full bg-blue-500 px-4 py-2 text-sm font-semibold text-slate-950 shadow-md shadow-blue-500/30 hover:bg-blue-300 focus:outline-none focus:ring-2 focus:ring-blue-300 focus:ring-offset-2 focus:ring-offset-slate-950"
+                            className="ml-2 inline-flex items-center rounded-full bg-blue-500 px-4 py-2 text-sm font-semibold text-slate-950 shadow-md shadow-blue-500/30 hover:bg-blue-300 focus:outline-none focus:ring-2 focus:ring-blue-300 focus:ring-offset-2 focus:ring-offset-slate-950 whitespace-nowrap"
                         >
                             <span className="sm:hidden">Book a Call</span>
                             <span className="hidden sm:inline">Book a 30-Minute Call</span>
@@ -52,10 +52,10 @@ export default function HomePage() {
                     className="border-slate-900 bg-gradient-to-b from-slate-950 via-slate-950 to-slate-900"
                 >
                     <div className="mx-auto max-w-5xl px-4 py-12 md:py-16">
-                        <div className="flex flex-col gap-10 md:flex-row md:items-center">
+                        <div className="hero-layout">
 
                             {/* Left — headline + bullets + CTAs */}
-                            <div className="md:w-3/5">
+                            <div>
 
                                 {/* Mobile-only: photo + name inline at top */}
                                 <div className="mb-5 flex items-center gap-4 md:hidden">
@@ -134,7 +134,7 @@ export default function HomePage() {
                             </div>
 
                             {/* Right — Photo + Why NorthStar CTO */}
-                            <div className="md:w-2/5 flex flex-col items-center gap-5">
+                            <div className="flex flex-col items-center gap-5">
 
                                 {/* Profile photo — desktop only */}
                                 <div className="hidden md:flex flex-col items-center gap-3">
@@ -323,7 +323,7 @@ export default function HomePage() {
                             Six areas that strengthen your technology foundation
                         </h2>
 
-                        <div className="mt-8 grid gap-4" style={{ gridTemplateColumns: "repeat(2, minmax(0, 1fr))" }}>
+                        <div className="mt-8 service-grid">
                             {[
                                 {
                                     title: "Product Strategy",
