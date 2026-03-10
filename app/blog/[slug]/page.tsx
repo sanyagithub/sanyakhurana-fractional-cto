@@ -23,8 +23,24 @@ export async function generateMetadata({ params }: BlogPostPageProps) {
     }
 
     return {
-        title: `${post.title} | NorthStar CTO`,
+        title: post.title,
         description: post.excerpt,
+        alternates: {
+            canonical: `/blog/${slug}`,
+        },
+        openGraph: {
+            title: post.title,
+            description: post.excerpt,
+            url: `/blog/${slug}`,
+            type: "article",
+            publishedTime: post.publishedAt,
+            authors: ["Sanya Khurana"],
+            tags: post.tags,
+        },
+        twitter: {
+            title: post.title,
+            description: post.excerpt,
+        },
     };
 }
 
