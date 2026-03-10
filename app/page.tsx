@@ -37,7 +37,8 @@ export default function HomePage() {
                             rel="noopener noreferrer"
                             className="ml-4 inline-flex items-center rounded-full bg-blue-500 px-4 py-2 text-sm font-semibold text-slate-950 shadow-md shadow-blue-500/30 hover:bg-blue-300 focus:outline-none focus:ring-2 focus:ring-blue-300 focus:ring-offset-2 focus:ring-offset-slate-950"
                         >
-                            Book a 30-Minute Call
+                            <span className="sm:hidden">Book a Call</span>
+                            <span className="hidden sm:inline">Book a 30-Minute Call</span>
                         </a>
                     </div>
                 </div>
@@ -97,9 +98,35 @@ export default function HomePage() {
                                 </div>
                             </div>
 
-                            {/* Right — Why NorthStar CTO */}
-                            <div className="md:w-2/5">
-                                <div className="rounded-2xl border border-slate-800 bg-slate-900/70 p-5">
+                            {/* Right — Photo + Why NorthStar CTO */}
+                            <div className="md:w-2/5 flex flex-col items-center gap-5">
+
+                                {/* Profile photo */}
+                                <div className="flex flex-col items-center gap-3">
+                                    <img
+                                        src="/sanya.jpeg"
+                                        alt="Sanya Khurana"
+                                        className="h-36 w-36 rounded-full object-cover border-2 border-slate-700 shadow-lg shadow-slate-900/50"
+                                    />
+                                    <div className="text-center">
+                                        <p className="font-semibold text-slate-50">Sanya Khurana</p>
+                                        <a
+                                            href="https://www.linkedin.com/in/sanyakhurana/"
+                                            target="_blank"
+                                            rel="noopener noreferrer"
+                                            className="mt-1 inline-flex items-center gap-1 text-xs text-blue-300 hover:text-blue-200"
+                                        >
+                                            <svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" viewBox="0 0 24 24" fill="currentColor">
+                                                <path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z" />
+                                                <rect x="2" y="9" width="4" height="12" />
+                                                <circle cx="4" cy="4" r="2" />
+                                            </svg>
+                                            LinkedIn
+                                        </a>
+                                    </div>
+                                </div>
+
+                                <div className="w-full rounded-2xl border border-slate-800 bg-slate-900/70 p-5">
                                     <h2 className="text-xs font-semibold uppercase tracking-[0.22em] text-slate-400">
                                         Why NorthStar CTO
                                     </h2>
@@ -117,6 +144,7 @@ export default function HomePage() {
                                         ))}
                                     </div>
                                 </div>
+
                             </div>
 
                         </div>
@@ -491,10 +519,16 @@ export default function HomePage() {
                     href={CALENDLY_URL}
                     target="_blank"
                     rel="noopener noreferrer"
-                    className="inline-flex items-center justify-between rounded-full bg-blue-500 px-5 py-2.5 text-sm font-semibold text-slate-950 shadow-md shadow-blue-500/30"
+                    className="inline-flex items-center justify-center gap-2 rounded-full bg-blue-500 px-5 py-2.5 text-sm font-semibold text-slate-950 shadow-md shadow-blue-500/30"
                     style={{ width: "100%" }}
                 >
-                    Book a 30-Minute Call →
+                    Book a 30-Minute Call
+                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round">
+                        <rect x="3" y="4" width="18" height="18" rx="2" ry="2" />
+                        <line x1="16" y1="2" x2="16" y2="6" />
+                        <line x1="8" y1="2" x2="8" y2="6" />
+                        <line x1="3" y1="10" x2="21" y2="10" />
+                    </svg>
                 </a>
             </div>
         </div>
