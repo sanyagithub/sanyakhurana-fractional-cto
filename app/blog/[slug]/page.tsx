@@ -1,6 +1,7 @@
 import Link from "next/link";
 import { notFound } from "next/navigation";
 import { getPostBySlug, getSortedPosts } from "../posts";
+import AudioPlayer from "../../components/AudioPlayer";
 
 const CALENDLY_URL =
     "https://calendly.com/sanya-6/1-1-call-with-sanya?hide_event_type_details=1&hide_gdpr_banner=1";
@@ -64,10 +65,7 @@ export default async function BlogPostPage({ params }: BlogPostPageProps) {
                         <p className="text-xs font-semibold uppercase tracking-[0.18em] text-slate-400 mb-2">
                             🎧 Listen to this article
                         </p>
-                        <audio controls preload="none" className="blog-audio-player">
-                            <source src={post.audioUrl} type="audio/mpeg" />
-                            Your browser does not support the audio element.
-                        </audio>
+                        <AudioPlayer src={post.audioUrl} />
                     </div>
                 )}
 
