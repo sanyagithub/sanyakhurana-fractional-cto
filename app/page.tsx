@@ -314,7 +314,7 @@ export default function HomePage() {
                 </section>
 
                 {/* ── WHAT I DO ── */}
-                <section className="border-t border-slate-900 bg-slate-950 py-14">
+                <section className="border-t border-slate-900 bg-slate-950 py-16">
                     <div className="mx-auto max-w-5xl px-4">
                         <p className="text-xs font-semibold uppercase tracking-[0.22em] text-slate-400">
                             What I do
@@ -363,7 +363,7 @@ export default function HomePage() {
                 </section>
 
                 {/* ── ABOUT SANYA ── */}
-                <section className="border-t border-slate-900 bg-slate-950 py-14">
+                <section className="border-t border-slate-900 bg-slate-950 py-16">
                     <div className="mx-auto max-w-5xl px-4">
                         <p className="text-xs font-semibold uppercase tracking-[0.22em] text-slate-400">
                             About
@@ -440,7 +440,7 @@ export default function HomePage() {
                 </section>
 
                 {/* ── TESTIMONIALS ── */}
-                <section className="border-t border-slate-900 bg-slate-950 py-14">
+                <section className="border-t border-slate-900 bg-slate-950 py-16">
                     <div className="mx-auto max-w-5xl px-4">
                         <p className="text-xs font-semibold uppercase tracking-[0.22em] text-slate-400">
                             What people say
@@ -458,12 +458,9 @@ export default function HomePage() {
                                 <p className="text-sm leading-relaxed text-slate-300">
                                     Sanya Khurana is a dream to work with. She is highly skilled, professional, and efficient, yet also kind, responsible, and adept at thinking outside the box. Her communication and follow-through are unsurpassed. I couldn&apos;t recommend her more highly!
                                 </p>
-                                <div className="mt-auto pt-4 border-t border-slate-800 flex items-center justify-between">
-                                    <div>
-                                        <p className="text-sm font-semibold text-slate-200">Annie Finch</p>
-                                        <p className="text-xs text-slate-500">Poet, Writer, Performer</p>
-                                    </div>
-                                    <span className="text-xs text-slate-600 border border-slate-800 rounded-full px-2 py-0.5">Colleague</span>
+                                <div className="mt-auto pt-4 border-t border-slate-800">
+                                    <p className="text-sm font-semibold text-slate-200">Annie Finch</p>
+                                    <p className="text-xs text-slate-500">Poet, Writer, Performer</p>
                                 </div>
                             </div>
 
@@ -475,12 +472,9 @@ export default function HomePage() {
                                 <p className="text-sm leading-relaxed text-slate-300">
                                     Her technical skills significantly contributed to our project&apos;s success. Her ability to generate exciting ideas in a short timeframe was impressive — she has the potential to be an outstanding leader and collaborator in any setting.
                                 </p>
-                                <div className="mt-auto pt-4 border-t border-slate-800 flex items-center justify-between">
-                                    <div>
-                                        <p className="text-sm font-semibold text-slate-200">Michelle Kae Celine</p>
-                                        <p className="text-xs text-slate-500">Data Analyst · SF Tech Week Hackathon</p>
-                                    </div>
-                                    <span className="text-xs text-slate-600 border border-slate-800 rounded-full px-2 py-0.5">Colleague</span>
+                                <div className="mt-auto pt-4 border-t border-slate-800">
+                                    <p className="text-sm font-semibold text-slate-200">Michelle Kae Celine</p>
+                                    <p className="text-xs text-slate-500">Data Analyst · SF Tech Week Hackathon</p>
                                 </div>
                             </div>
 
@@ -489,7 +483,7 @@ export default function HomePage() {
                 </section>
 
                 {/* ── HOW IT WORKS ── */}
-                <section className="border-t border-slate-900 bg-slate-950 py-14">
+                <section className="border-t border-slate-900 bg-slate-950 py-16">
                     <div className="mx-auto max-w-5xl px-4">
                         <p className="text-xs font-semibold uppercase tracking-[0.22em] text-slate-400">
                             How it works
