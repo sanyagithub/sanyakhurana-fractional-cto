@@ -14,6 +14,21 @@ export const metadata = {
     title: "Fractional CTO for Growing Businesses | NorthStar CTO — Sanya Khurana",
     description:
         "NorthStar CTO provides Fractional CTO services for growing businesses, small teams, and mission-led organizations. Bring clarity, structure, and reliable technical leadership to your product and operations.",
+    alternates: {
+        canonical: "/",
+    },
+    openGraph: {
+        title: "Fractional CTO for Growing Businesses | NorthStar CTO",
+        description:
+            "Senior technical strategy, vendor accountability, and delivery leadership for non-technical founders — without the full-time CTO cost.",
+        url: "/",
+        type: "website",
+    },
+    twitter: {
+        title: "Fractional CTO for Growing Businesses | NorthStar CTO",
+        description:
+            "Senior technical strategy, vendor accountability, and delivery leadership for non-technical founders — without the full-time CTO cost.",
+    },
 };
 
 export default function HomePage() {
@@ -38,7 +53,7 @@ export default function HomePage() {
                             href={CALENDLY_URL}
                             target="_blank"
                             rel="noopener noreferrer"
-                            className="ml-4 inline-flex items-center rounded-full bg-blue-500 px-4 py-2 text-sm font-semibold text-slate-950 shadow-md shadow-blue-500/30 hover:bg-blue-300 focus:outline-none focus:ring-2 focus:ring-blue-300 focus:ring-offset-2 focus:ring-offset-slate-950"
+                            className="ml-2 inline-flex items-center rounded-full bg-blue-500 px-4 py-2 text-sm font-semibold text-slate-950 shadow-md shadow-blue-500/30 hover:bg-blue-300 focus:outline-none focus:ring-2 focus:ring-blue-300 focus:ring-offset-2 focus:ring-offset-slate-950 whitespace-nowrap"
                         >
                             <span className="sm:hidden">Book a Call</span>
                             <span className="hidden sm:inline">Book a 30-Minute Call</span>
@@ -55,10 +70,10 @@ export default function HomePage() {
                     className="border-slate-900 bg-gradient-to-b from-slate-950 via-slate-950 to-slate-900"
                 >
                     <div className="mx-auto max-w-5xl px-4 py-12 md:py-16">
-                        <div className="flex flex-col gap-10 md:flex-row md:items-center">
+                        <div className="hero-layout">
 
                             {/* Left — headline + bullets + CTAs */}
-                            <div className="md:w-3/5">
+                            <div>
 
                                 {/* Mobile-only: photo + name inline at top */}
                                 <div className="mb-5 flex items-center gap-4 md:hidden">
@@ -137,7 +152,7 @@ export default function HomePage() {
                             </div>
 
                             {/* Right — Photo + Why NorthStar CTO */}
-                            <div className="md:w-2/5 flex flex-col items-center gap-5">
+                            <div className="flex flex-col items-center gap-5">
 
                                 {/* Profile photo — desktop only */}
                                 <div className="hidden md:flex flex-col items-center gap-3">
@@ -349,7 +364,7 @@ export default function HomePage() {
                 </section>
 
                 {/* ── WHAT I DO ── */}
-                <section className="border-t border-slate-900 bg-slate-950 py-14">
+                <section className="border-t border-slate-900 bg-slate-950 py-16">
                     <div className="mx-auto max-w-5xl px-4">
                         <p className="text-xs font-semibold uppercase tracking-[0.22em] text-slate-400">
                             What I do
@@ -358,7 +373,7 @@ export default function HomePage() {
                             Six areas that strengthen your technology foundation
                         </h2>
 
-                        <div className="mt-8 grid gap-4" style={{ gridTemplateColumns: "repeat(2, minmax(0, 1fr))" }}>
+                        <div className="mt-8 service-grid">
                             {[
                                 {
                                     title: "Product Strategy",
@@ -398,7 +413,7 @@ export default function HomePage() {
                 </section>
 
                 {/* ── ABOUT SANYA ── */}
-                <section className="border-t border-slate-900 bg-slate-950 py-14">
+                <section className="border-t border-slate-900 bg-slate-950 py-16">
                     <div className="mx-auto max-w-5xl px-4">
                         <p className="text-xs font-semibold uppercase tracking-[0.22em] text-slate-400">
                             About
@@ -475,7 +490,7 @@ export default function HomePage() {
                 </section>
 
                 {/* ── TESTIMONIALS ── */}
-                <section className="border-t border-slate-900 bg-slate-950 py-14">
+                <section className="border-t border-slate-900 bg-slate-950 py-16">
                     <div className="mx-auto max-w-5xl px-4">
                         <p className="text-xs font-semibold uppercase tracking-[0.22em] text-slate-400">
                             What people say
@@ -493,12 +508,9 @@ export default function HomePage() {
                                 <p className="text-sm leading-relaxed text-slate-300">
                                     Sanya Khurana is a dream to work with. She is highly skilled, professional, and efficient, yet also kind, responsible, and adept at thinking outside the box. Her communication and follow-through are unsurpassed. I couldn&apos;t recommend her more highly!
                                 </p>
-                                <div className="mt-auto pt-4 border-t border-slate-800 flex items-center justify-between">
-                                    <div>
-                                        <p className="text-sm font-semibold text-slate-200">Annie Finch</p>
-                                        <p className="text-xs text-slate-500">Poet, Writer, Performer</p>
-                                    </div>
-                                    <span className="text-xs text-slate-600 border border-slate-800 rounded-full px-2 py-0.5">Colleague</span>
+                                <div className="mt-auto pt-4 border-t border-slate-800">
+                                    <p className="text-sm font-semibold text-slate-200">Annie Finch</p>
+                                    <p className="text-xs text-slate-500">Poet, Writer, Performer</p>
                                 </div>
                             </div>
 
@@ -510,12 +522,9 @@ export default function HomePage() {
                                 <p className="text-sm leading-relaxed text-slate-300">
                                     Her technical skills significantly contributed to our project&apos;s success. Her ability to generate exciting ideas in a short timeframe was impressive — she has the potential to be an outstanding leader and collaborator in any setting.
                                 </p>
-                                <div className="mt-auto pt-4 border-t border-slate-800 flex items-center justify-between">
-                                    <div>
-                                        <p className="text-sm font-semibold text-slate-200">Michelle Kae Celine</p>
-                                        <p className="text-xs text-slate-500">Data Analyst · SF Tech Week Hackathon</p>
-                                    </div>
-                                    <span className="text-xs text-slate-600 border border-slate-800 rounded-full px-2 py-0.5">Colleague</span>
+                                <div className="mt-auto pt-4 border-t border-slate-800">
+                                    <p className="text-sm font-semibold text-slate-200">Michelle Kae Celine</p>
+                                    <p className="text-xs text-slate-500">Data Analyst · SF Tech Week Hackathon</p>
                                 </div>
                             </div>
 
@@ -524,7 +533,7 @@ export default function HomePage() {
                 </section>
 
                 {/* ── HOW IT WORKS ── */}
-                <section className="border-t border-slate-900 bg-slate-950 py-14">
+                <section className="border-t border-slate-900 bg-slate-950 py-16">
                     <div className="mx-auto max-w-5xl px-4">
                         <p className="text-xs font-semibold uppercase tracking-[0.22em] text-slate-400">
                             How it works

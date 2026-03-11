@@ -5,9 +5,24 @@ const calendlyHref =
     "https://calendly.com/sanya-6/1-1-call-with-sanya?hide_event_type_details=1&hide_gdpr_banner=1";
 
 export const metadata = {
-    title: "Growth Fractional CTO | Active Technical Leadership",
+    title: "Growth CTO — Fractional Technical Leadership for Scaling Startups",
     description:
-        "Growth CTO engagement for businesses needing active team leadership, sprint oversight, and structured execution management.",
+        "Active fractional CTO engagement for startups in build mode. Weekly sprint oversight, delivery management, and structured execution leadership — without a full-time hire.",
+    alternates: {
+        canonical: "/engagement/growth",
+    },
+    openGraph: {
+        title: "Growth CTO — Fractional Technical Leadership for Scaling Startups | NorthStar CTO",
+        description:
+            "Weekly sprint oversight, delivery management, and structured execution for teams actively building their product.",
+        url: "/engagement/growth",
+        type: "website",
+    },
+    twitter: {
+        title: "Growth CTO — Fractional Technical Leadership for Scaling Startups | NorthStar CTO",
+        description:
+            "Weekly sprint oversight, delivery management, and structured execution for teams actively building their product.",
+    },
 };
 
 const included = [

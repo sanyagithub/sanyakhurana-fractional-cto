@@ -5,9 +5,24 @@ const calendlyHref =
     "https://calendly.com/sanya-6/1-1-call-with-sanya?hide_event_type_details=1&hide_gdpr_banner=1";
 
 export const metadata = {
-    title: "On-Demand CTO Advisory | Technical Audits & Strategic Support",
+    title: "On-Demand CTO Advisory — Tech Audits & Vendor Reviews",
     description:
-        "On-demand CTO advisory for audits, vendor validation, architecture reviews, and high-stakes technical decisions.",
+        "Independent CTO advisory for one-time technical decisions. Codebase audits, vendor proposal reviews, tech due diligence, and architecture assessments — no recurring commitment required.",
+    alternates: {
+        canonical: "/engagement/on-demand",
+    },
+    openGraph: {
+        title: "On-Demand CTO Advisory — Tech Audits & Vendor Reviews | NorthStar CTO",
+        description:
+            "Independent CTO advisory for codebase audits, vendor reviews, and tech due diligence. Fixed scope, no recurring commitment.",
+        url: "/engagement/on-demand",
+        type: "website",
+    },
+    twitter: {
+        title: "On-Demand CTO Advisory — Tech Audits & Vendor Reviews | NorthStar CTO",
+        description:
+            "Independent CTO advisory for codebase audits, vendor reviews, and tech due diligence. Fixed scope, no recurring commitment.",
+    },
 };
 
 const scopes = [
