@@ -1,5 +1,7 @@
 // app/page.tsx
 import Link from "next/link";
+import BlogStrip from "./components/BlogStrip";
+import { getSortedPosts } from "./blog/posts";
 
 const EMAIL = "sanya@monica.in";
 const emailHref = `mailto:${EMAIL}?subject=${encodeURIComponent(
@@ -15,6 +17,7 @@ export const metadata = {
 };
 
 export default function HomePage() {
+    const posts = getSortedPosts();
     return (
         <div className="min-h-screen flex flex-col">
             <header className="sticky top-0 z-40 border-b border-slate-800 bg-slate-950/85 backdrop-blur">
@@ -186,8 +189,40 @@ export default function HomePage() {
                     </div>
                 </section>
 
+                {/* ── RECENT INSIGHTS ── */}
+                {posts.length > 0 && (
+                    <div className="border-t border-slate-900 bg-slate-950 py-3">
+                        <div className="mx-auto max-w-5xl px-4">
+                            {/* Mobile: label + "All posts" on one row, strip below */}
+                            <div className="flex items-center justify-between gap-2 md:hidden">
+                                <span className="text-xs font-semibold uppercase tracking-[0.2em] text-slate-500">
+                                    From the blog
+                                </span>
+                                <Link href="/blog" className="text-xs font-medium text-blue-400 hover:text-blue-300">
+                                    All posts →
+                                </Link>
+                            </div>
+                            <div className="mt-2 md:hidden">
+                                <BlogStrip posts={posts} />
+                            </div>
+                            {/* Desktop: single row */}
+                            <div className="hidden md:flex items-center gap-3">
+                                <span className="text-xs font-semibold uppercase tracking-[0.2em] text-slate-500 shrink-0">
+                                    From the blog
+                                </span>
+                                <div className="flex-1 min-w-0">
+                                    <BlogStrip posts={posts} />
+                                </div>
+                                <Link href="/blog" className="shrink-0 text-xs font-medium text-blue-400 hover:text-blue-300">
+                                    All posts →
+                                </Link>
+                            </div>
+                        </div>
+                    </div>
+                )}
+
                 {/* ── ENGAGEMENT MODELS ── */}
-                <section id="engage" className="border-t border-slate-900 bg-slate-950 pt-14 pb-20">
+                <section id="engage" className="border-t border-slate-900 bg-slate-950" style={{ paddingTop: "2.75rem", paddingBottom: "5rem" }}>
                     <div className="mx-auto max-w-5xl px-4">
                         <p className="text-xs font-semibold uppercase tracking-[0.22em] text-slate-400">
                             Engagement models
