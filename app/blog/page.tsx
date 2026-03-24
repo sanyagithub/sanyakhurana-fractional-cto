@@ -5,14 +5,23 @@ const CALENDLY_URL =
     "https://calendly.com/sanya-6/1-1-call-with-sanya?hide_event_type_details=1&hide_gdpr_banner=1";
 
 export const metadata = {
-    title: "Blog | NorthStar CTO",
+    title: "Fractional CTO Insights: Technical Leadership for Founders",
     description:
-        "Articles and videos on product strategy, architecture decisions, vendor oversight, and scalable technical leadership.",
+        "Practical articles on fractional CTO services, technical leadership, vendor accountability, product strategy, and architecture decisions — for non-technical founders and growing teams.",
+    alternates: {
+        canonical: "/blog",
+    },
     openGraph: {
-        title: "Blog | NorthStar CTO",
+        title: "Fractional CTO Insights: Technical Leadership for Founders | NorthStar CTO",
         description:
-            "Articles and videos on product strategy, architecture decisions, vendor oversight, and scalable technical leadership.",
+            "Practical thinking on fractional CTO services, technical leadership, vendor oversight, and building technology that serves your business.",
+        url: "/blog",
         type: "website",
+    },
+    twitter: {
+        title: "Fractional CTO Insights: Technical Leadership for Founders | NorthStar CTO",
+        description:
+            "Practical thinking on fractional CTO services, technical leadership, vendor oversight, and building technology that serves your business.",
     },
 };
 

@@ -5,9 +5,24 @@ const calendlyHref =
     "https://calendly.com/sanya-6/1-1-call-with-sanya?hide_event_type_details=1&hide_gdpr_banner=1";
 
 export const metadata = {
-    title: "Scale Fractional CTO | Executive Technical Leadership",
+    title: "Scale CTO — Fractional Executive Technical Leadership",
     description:
-        "Scale CTO engagement for organizations where technology is central to operations, revenue, and long-term growth.",
+        "Executive-level fractional CTO for organizations where technology drives revenue and operations. Strategic roadmap ownership, architecture governance, and multi-vendor coordination.",
+    alternates: {
+        canonical: "/engagement/scale",
+    },
+    openGraph: {
+        title: "Scale CTO — Fractional Executive Technical Leadership | NorthStar CTO",
+        description:
+            "Strategic roadmap ownership, architecture governance, and executive technical leadership for complex, technology-led organizations.",
+        url: "/engagement/scale",
+        type: "website",
+    },
+    twitter: {
+        title: "Scale CTO — Fractional Executive Technical Leadership | NorthStar CTO",
+        description:
+            "Strategic roadmap ownership, architecture governance, and executive technical leadership for complex, technology-led organizations.",
+    },
 };
 
 const included = [

@@ -890,6 +890,7 @@ section {
   color: var(--slate-300);
   border-bottom: 1px solid rgba(128, 146, 167, 0.07);
   vertical-align: top;
+  white-space: nowrap;
 }
 
 .comparison-table td:first-child {
@@ -1000,6 +1001,140 @@ section {
 
   .md\:grid-cols-3 {
     grid-template-columns: repeat(3, minmax(0, 1fr));
+  }
+}
+
+/* =========================
+   BLOG STRIP
+   ========================= */
+
+/* Slim horizontal bar — one row of clickable post titles */
+.blog-strip-bar {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 0.25rem 0;
+}
+
+@media (min-width: 768px) {
+  .blog-strip-bar {
+    border: 1px solid rgba(148, 163, 184, 0.12);
+    border-radius: 0.75rem;
+    background: rgba(15, 23, 42, 0.6);
+    padding: 0.5rem 0.75rem;
+  }
+}
+
+.blog-strip-item {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  text-decoration: none;
+  color: #cbd5e1;
+  font-size: 0.8125rem;
+  padding: 0.25rem 0.5rem;
+  border-radius: 0.375rem;
+  transition: color 150ms ease, background 150ms ease;
+}
+
+.blog-strip-item:hover {
+  color: #f8fafc;
+  background: rgba(148, 163, 184, 0.08);
+}
+
+.blog-strip-kind {
+  font-size: 0.6875rem;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.15em;
+  color: #93c5fd;
+  flex-shrink: 0;
+}
+
+.blog-strip-title-text {
+  color: inherit;
+}
+
+.blog-strip-divider {
+  color: rgba(148, 163, 184, 0.3);
+  padding: 0 0.25rem;
+  pointer-events: none;
+   MISSING SPACING UTILITIES
+   ========================= */
+
+.mb-4 { margin-bottom: 1rem; }
+.mb-5 { margin-bottom: 1.25rem; }
+.pt-4 { padding-top: 1rem; }
+.pb-6 { padding-bottom: 1.5rem; }
+.pb-20 { padding-bottom: 5rem; }
+.gap-1\.5 { gap: 0.375rem; }
+.gap-2\.5 { gap: 0.625rem; }
+.mt-auto { margin-top: auto; }
+.min-w-0 { min-width: 0; }
+.shrink-0 { flex-shrink: 0; }
+.whitespace-nowrap { white-space: nowrap; }
+
+/* =========================
+   SM BREAKPOINT UTILITIES
+   ========================= */
+
+@media (min-width: 640px) {
+  .sm\:hidden { display: none; }
+  .sm\:inline { display: inline; }
+  .sm\:text-4xl {
+    font-size: 2.25rem;
+    line-height: 2.5rem;
+  }
+}
+
+/* =========================
+   ADDITIONAL MD UTILITIES
+   ========================= */
+
+@media (min-width: 768px) {
+  .md\:pb-0 { padding-bottom: 0; }
+  .md\:gap-6 { gap: 1.5rem; }
+  .md\:py-16 {
+    padding-top: 4rem;
+    padding-bottom: 4rem;
+  }
+}
+
+/* =========================
+   SERVICE CARDS GRID
+   1-col on mobile → 2-col on md+
+   ========================= */
+
+.service-grid {
+  display: grid;
+  gap: 1rem;
+  grid-template-columns: 1fr;
+}
+
+@media (min-width: 768px) {
+  .service-grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+}
+
+/* =========================
+   HERO LAYOUT
+   flex-col on mobile → CSS grid on md+
+   (grid avoids the % + gap overflow bug)
+   ========================= */
+
+.hero-layout {
+  display: flex;
+  flex-direction: column;
+  gap: 2.5rem;
+}
+
+@media (min-width: 768px) {
+  .hero-layout {
+    display: grid;
+    grid-template-columns: 3fr 2fr;
+    gap: 2rem;
+    align-items: center;
   }
 }
 
