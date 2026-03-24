@@ -19,10 +19,19 @@ export const metadata: Metadata = {
         type: "website",
         locale: "en_GB",
         alternateLocale: ["en_US"],
+        images: [
+            {
+                url: "/sanya.jpeg",
+                width: 1200,
+                height: 630,
+                alt: "Sanya Khurana — NorthStar CTO",
+            },
+        ],
     },
     twitter: {
         card: "summary_large_image",
         site: "@northstarcto",
+        images: ["/sanya.jpeg"],
     },
 };
 

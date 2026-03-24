@@ -111,6 +111,29 @@ export default async function BlogPostPage({ params }: BlogPostPageProps) {
                     </div>
                 )}
 
+                <script
+                    type="application/ld+json"
+                    dangerouslySetInnerHTML={{
+                        __html: JSON.stringify({
+                            "@context": "https://schema.org",
+                            "@type": "Article",
+                            headline: post.title,
+                            description: post.excerpt,
+                            datePublished: post.publishedAt,
+                            author: {
+                                "@type": "Person",
+                                name: "Sanya Khurana",
+                                url: "https://northstarcto.com",
+                            },
+                            publisher: {
+                                "@type": "Organization",
+                                name: "NorthStar CTO",
+                                url: "https://northstarcto.com",
+                            },
+                        }),
+                    }}
+                />
+
                 <article className="mt-8 space-y-3 text-sm text-slate-300">
                     {post.body.map((paragraph) => (
                         <p key={paragraph}>{paragraph}</p>
