@@ -8,6 +8,12 @@ export const metadata = {
     title: "Blog | NorthStar CTO",
     description:
         "Articles and videos on product strategy, architecture decisions, vendor oversight, and scalable technical leadership.",
+    openGraph: {
+        title: "Blog | NorthStar CTO",
+        description:
+            "Articles and videos on product strategy, architecture decisions, vendor oversight, and scalable technical leadership.",
+        type: "website",
+    },
 };
 
 export default function BlogIndexPage() {

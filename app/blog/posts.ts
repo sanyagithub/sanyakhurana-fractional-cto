@@ -33,6 +33,23 @@ export const BLOG_POST_TEMPLATE: BlogPost = {
 
 export const BLOG_POSTS: BlogPost[] = [
     {
+        slug: "what-a-fractional-cto-actually-does",
+        title: "What a Fractional CTO Actually Does (And What They Don't)",
+        excerpt:
+            "A fractional CTO provides senior technical leadership on a part-time basis — here is exactly what that looks like in practice, from first engagement to ongoing work.",
+        publishedAt: "2026-03-24",
+        kind: "article",
+        tags: ["fractional cto", "technical leadership", "startup founders"],
+        body: [
+            "A fractional CTO is a senior technology executive who works with a company on a part-time or contract basis, providing the strategic and architectural leadership of a Chief Technology Officer without the cost or commitment of a full-time hire. They own the technical direction of the business — evaluating architecture, guiding the engineering team, overseeing vendors, and ensuring that technology decisions serve business goals — but they do so across a defined number of hours per week or month rather than as a permanent member of the leadership team.",
+            "In the first weeks of an engagement, a fractional CTO typically conducts a structured technical audit: reviewing the existing codebase, infrastructure, tooling, team composition, and any vendor or third-party integrations. The output of this phase is a clear-eyed picture of where the system is strong, where it carries risk, and what the highest-priority decisions are. From this, they build a technical roadmap that aligns with the company's business objectives — not a wish list of engineering improvements, but a prioritised plan that connects technology investment to product outcomes and revenue.",
+            "Ongoing responsibilities vary by engagement but commonly include: reviewing and approving architecture decisions, evaluating vendor proposals before contracts are signed, defining engineering standards and documentation practices, supporting the hiring and onboarding of technical staff, and serving as a sounding board for founders and product leads on technology trade-offs. In practice, this often means attending key planning meetings, being available asynchronously for urgent decisions, and running periodic reviews of technical progress against the roadmap.",
+            "What a fractional CTO does not do is equally important to understand. They are not a hands-on developer writing production code day-to-day. They do not manage sprint ceremonies or act as a project manager. They do not replace your engineering team — they make your existing team more effective by giving it direction, standards, and the kind of senior oversight that prevents expensive mistakes. And unlike a full-time hire, they do not require a six-month ramp-up period, equity packages, or the cultural overhead of an additional C-suite executive.",
+            "The organisations that benefit most from fractional technical leadership tend to share a common profile: a non-technical founder or CEO who needs a trusted technical counterpart, an engineering team that is capable but lacks strategic direction, a company preparing for a significant product or infrastructure decision, or an organisation that has outgrown ad hoc technical choices but is not yet at the scale that justifies a full-time CTO. This includes early-stage startups, Series A companies, nonprofits running digital products, and established small businesses undergoing digital transformation.",
+            "The right question is not whether your company needs a CTO, but whether it needs CTO-level thinking right now. If you are making architecture decisions that will be difficult to reverse, evaluating vendors whose contracts will bind you for years, or growing a technical team without a clear hiring framework — then the answer is almost certainly yes. The question is only whether that leadership needs to be full-time, or whether focused, experienced, and stage-appropriate engagement is the more sensible path.",
+        ],
+    },
+    {
         slug: "why-growing-startups-dont-need-a-full-time-cto-yet",
         title: "Why Most Growing Startups Don’t Need a Full-Time CTO (Yet)",
         excerpt:

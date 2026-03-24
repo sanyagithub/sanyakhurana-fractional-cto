@@ -24,6 +24,13 @@ export async function generateMetadata({ params }: BlogPostPageProps) {
     return {
         title: `${post.title} | NorthStar CTO`,
         description: post.excerpt,
+        openGraph: {
+            title: post.title,
+            description: post.excerpt,
+            type: "article",
+            publishedTime: post.publishedAt,
+            tags: post.tags,
+        },
     };
 }
 
@@ -96,6 +103,29 @@ export default async function BlogPostPage({ params }: BlogPostPageProps) {
                         </video>
                     </div>
                 )}
+
+                <script
+                    type="application/ld+json"
+                    dangerouslySetInnerHTML={{
+                        __html: JSON.stringify({
+                            "@context": "https://schema.org",
+                            "@type": "Article",
+                            headline: post.title,
+                            description: post.excerpt,
+                            datePublished: post.publishedAt,
+                            author: {
+                                "@type": "Person",
+                                name: "Sanya Khurana",
+                                url: "https://northstarcto.com",
+                            },
+                            publisher: {
+                                "@type": "Organization",
+                                name: "NorthStar CTO",
+                                url: "https://northstarcto.com",
+                            },
+                        }),
+                    }}
+                />
 
                 <article className="mt-8 space-y-3 text-sm text-slate-300">
                     {post.body.map((paragraph) => (
