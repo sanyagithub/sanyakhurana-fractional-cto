@@ -13,6 +13,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
             changeFrequency: "monthly" as const,
             priority: 0.8,
         })),
+        { url: "https://northstarcto.com/checklist", changeFrequency: "monthly" as const, priority: 0.8 },
         { url: "https://northstarcto.com/engagement/starter", changeFrequency: "monthly" as const, priority: 0.7 },
         { url: "https://northstarcto.com/engagement/growth", changeFrequency: "monthly" as const, priority: 0.7 },
         { url: "https://northstarcto.com/engagement/scale", changeFrequency: "monthly" as const, priority: 0.7 },
