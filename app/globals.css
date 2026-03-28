@@ -1120,6 +1120,202 @@ section {
 }
 
 /* =========================
+   CHECKLIST PAGE
+   ========================= */
+
+.checklist-section {
+  border-radius: 0.9rem;
+  border: 1px solid #131c27;
+  overflow: hidden;
+}
+
+.checklist-section-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: #0b121b;
+  border-left: 3px solid #0070f3;
+  padding: 0.75rem 1.25rem;
+  font-size: 0.75rem;
+  font-weight: 600;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+  color: #b4c0d0;
+}
+
+.checklist-section-header.trigger-header {
+  border-left-color: #f59e0b;
+  color: #f59e0b;
+}
+
+.checklist-score-badge {
+  font-size: 0.8rem;
+  font-weight: 700;
+  color: #66b8ff;
+  letter-spacing: 0;
+  text-transform: none;
+  white-space: nowrap;
+}
+
+.checklist-items {
+  display: flex;
+  flex-direction: column;
+}
+
+.checklist-item {
+  display: flex;
+  align-items: flex-start;
+  gap: 0.75rem;
+  padding: 0.85rem 1.25rem;
+  border-top: 1px solid #131c27;
+  cursor: pointer;
+  transition: background-color 150ms ease;
+}
+
+.checklist-item:hover {
+  background-color: rgba(13, 19, 30, 0.6);
+}
+
+.checklist-item.checked {
+  background-color: rgba(0, 112, 243, 0.06);
+}
+
+.checklist-item.trigger-item.checked {
+  background-color: rgba(245, 158, 11, 0.06);
+}
+
+.checklist-item input[type="checkbox"] {
+  appearance: none;
+  -webkit-appearance: none;
+  width: 1.1rem;
+  height: 1.1rem;
+  min-width: 1.1rem;
+  border: 1.5px solid #2f4053;
+  border-radius: 0.25rem;
+  background-color: transparent;
+  cursor: pointer;
+  margin-top: 0.15rem;
+  position: relative;
+  transition: border-color 150ms ease, background-color 150ms ease;
+}
+
+.checklist-item input[type="checkbox"]:checked {
+  background-color: #0070f3;
+  border-color: #0070f3;
+}
+
+.checklist-item.trigger-item input[type="checkbox"]:checked {
+  background-color: #f59e0b;
+  border-color: #f59e0b;
+}
+
+.checklist-item input[type="checkbox"]:checked::after {
+  content: "";
+  position: absolute;
+  left: 0.18rem;
+  top: 0.05rem;
+  width: 0.45rem;
+  height: 0.65rem;
+  border: 2px solid #fff;
+  border-top: none;
+  border-left: none;
+  transform: rotate(45deg);
+}
+
+.checklist-item-text {
+  display: flex;
+  flex-direction: column;
+  gap: 0.2rem;
+}
+
+.checklist-item-label {
+  font-size: 0.875rem;
+  color: #d8dee9;
+  line-height: 1.45;
+}
+
+.checklist-item.checked .checklist-item-label {
+  color: #e5e7eb;
+}
+
+.checklist-item-hint {
+  font-size: 0.78rem;
+  font-style: italic;
+  color: #4f6278;
+  line-height: 1.4;
+}
+
+.trigger-banner {
+  background-color: rgba(245, 158, 11, 0.08);
+  border-top: 1px solid rgba(245, 158, 11, 0.2);
+  padding: 0.65rem 1.25rem;
+  font-size: 0.8rem;
+  color: #f59e0b;
+}
+
+.result-panel {
+  border-radius: 0.9rem;
+  border: 1.5px solid;
+  background-color: #0b121b;
+  padding: 1.5rem;
+  display: flex;
+  gap: 1.5rem;
+  align-items: flex-start;
+}
+
+.result-score {
+  display: flex;
+  align-items: baseline;
+  gap: 0.2rem;
+  white-space: nowrap;
+}
+
+.result-number {
+  font-size: 3rem;
+  font-weight: 700;
+  line-height: 1;
+}
+
+.result-denom {
+  font-size: 1.1rem;
+  color: #4f6278;
+  font-weight: 500;
+}
+
+.result-body {
+  flex: 1;
+}
+
+.result-band {
+  font-size: 0.7rem;
+  font-weight: 600;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  margin: 0 0 0.3rem;
+}
+
+.result-headline {
+  font-size: 1.05rem;
+  font-weight: 600;
+  color: #e5e7eb;
+  margin: 0 0 0.4rem;
+}
+
+.result-text {
+  font-size: 0.85rem;
+  color: #8092a7;
+  margin: 0;
+  line-height: 1.55;
+}
+
+@media (max-width: 480px) {
+  .result-panel {
+    flex-direction: column;
+    gap: 0.75rem;
+  }
+}
+
+/* =========================
    HERO LAYOUT
    flex-col on mobile → CSS grid on md+
    (grid avoids the % + gap overflow bug)
